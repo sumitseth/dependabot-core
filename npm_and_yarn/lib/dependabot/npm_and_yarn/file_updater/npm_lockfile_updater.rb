@@ -640,9 +640,12 @@ module Dependabot
           # packages section in the lockfile because we install using
           # `--package-lock-only`
           current_name = parsed_updated_lockfile.dig("packages", "", "name")
+          original_name = parsed_original_package["name"]
           if !parsed_original_lockfile.dig("packages", "", "name")
             updated_content = updated_content.gsub(/"": {[\n\s]+"name": "#{current_name}",/, '"": {')
-          elsif (original_name = parsed_original_package["name"])
+          # Restore sanitized package names as they might have been changed to
+          # to work around npm validations (see sanitized_package_json_content)
+          elsif original_name && original_name != current_name
             updated_content = updated_content.gsub(/"name": "#{current_name}"/, "\"name\": \"#{original_name}\"")
           end
 
