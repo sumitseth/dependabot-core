@@ -183,16 +183,36 @@ module Dependabot
         end
 
         def run_npm_7_top_level_updater(lockfile_name:, top_level_dependency_updates:)
+          # NOTE: Check if the dependencies being updated are defined in
+          # package.json files that are in the same directory as the lockfile
+          lockfile_dir = Pathname.new(lockfile_name).dirname.to_s
+          is_dependency_in_top_level_manifest = top_level_dependency_updates.any? do |dependency|
+            dependency[:requirements].any? do |req|
+              req_dir = Pathname.new(req[:file]).dirname.to_s
+              req_dir == lockfile_dir
+            end
+          end
+
+          # NOTE: When updating a dependency in a nested workspace project we
+          # need to run `npm install` without any arguments to update the root
+          # level lockfile after having updated the nested packages package.json
+          # requirement, otherwise npm will add the dependency as a new
+          # top-level dependency to the root lockfile.
+          install_args = ""
+          if is_dependency_in_top_level_manifest
+            flattenend_manifest_dependencies = flattenend_manifest_dependencies_for_lockfile_name(lockfile_name)
+            install_args = npm_top_level_updater_args(
+              top_level_dependency_updates: top_level_dependency_updates,
+              flattenend_manifest_dependencies: flattenend_manifest_dependencies
+            )
+          end
+
+          # NOTE: npm options
           # - `--dry-run=false` the updater sets a global .npmrc with dry-run: true to
           #   work around an issue in npm 6, we don't want that here
           # - `--force` ignores checks for platform (os, cpu) and engines
           # - `--ignore-scripts` disables prepare and prepack scripts which are run
           #   when installing git dependencies
-          flattenend_manifest_dependencies = flattenend_manifest_dependencies_for_lockfile_name(lockfile_name)
-          install_args = npm_top_level_updater_args(
-            top_level_dependency_updates: top_level_dependency_updates,
-            flattenend_manifest_dependencies: flattenend_manifest_dependencies
-          )
           command = [
             "npm",
             "install",
@@ -660,8 +680,23 @@ module Dependabot
           original_package = updated_package_json_content_for_lockfile_name(lockfile_name)
           return lockfile_content unless original_package
 
+          original_lockfile = package_locks.find { |file| file.name == lockfile_name }
+          parsed_original_lockfile = JSON.parse(original_lockfile.content)
+
           parsed_package = JSON.parse(original_package)
           parsed_lockfile = JSON.parse(lockfile_content)
+
+          # TODO: Submit a patch to npm fixing this issue making `npm install`
+          # consistent with `npm install --package-lock-only`
+          #
+          # NOTE: This is a workaround for npm adding a `name` attribute to the
+          # packages section in the lockfile because we install using
+          # `--package-lock-only`
+          unless parsed_original_lockfile.dig("packages", "", "name")
+            name = parsed_lockfile.dig("packages", "", "name")
+            lockfile_content = lockfile_content.gsub(/"": {[\n\s]+"name": "#{name}",/, '"": {')
+          end
+
           dependency_names_to_restore = (dependencies.map(&:name) + git_dependencies_to_lock.keys).uniq
 
           NpmAndYarn::FileParser::DEPENDENCY_TYPES.each do |type|
