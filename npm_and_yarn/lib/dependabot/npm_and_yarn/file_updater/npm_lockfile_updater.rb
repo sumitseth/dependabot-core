@@ -106,51 +106,39 @@ module Dependabot
         # update the root lockfile and check if the dependency is in the
         # lockfile
         def top_level_dependency_update_not_required?(dependency)
-          requirements_for_path = dependency.requirements.select do |req|
-            req_dir = Pathname.new(req[:file]).dirname.to_s
-            req_dir == lockfile_directory
-          end
-
-          dependency_in_lockfile = lockfile_dependencies.any? do |dep|
-            dep.name == dependency.name
-          end
-
-          dependency.top_level? && requirements_for_path.empty? && !dependency_in_lockfile
+          dependency.top_level? &&
+            !dependency_in_package_json?(dependency) &&
+            !dependency_in_lockfile?(dependency)
         end
 
         def run_current_npm_update
-          top_level_dependency_updates = top_level_dependencies.map do |d|
-            { name: d.name, version: d.version, requirements: d.requirements }
-          end
-
-          run_npm_updater(top_level_dependency_updates: top_level_dependency_updates)
+          run_npm_updater(top_level_dependencies: top_level_dependencies)
         end
 
         def run_previous_npm_update
           previous_top_level_dependencies = top_level_dependencies.map do |d|
-            {
-              name: d.name,
-              version: d.previous_version,
-              requirements: d.previous_requirements
-            }
+            dependency = d.dup
+            dependency.version = d.previous_version
+            dependency.requirements = d.previous_requirements
+            dependency
           end
 
-          run_npm_updater(top_level_dependency_updates: previous_top_level_dependencies)
+          run_npm_updater(top_level_dependencies: previous_top_level_dependencies)
         end
 
-        def run_npm_updater(top_level_dependency_updates:)
+        def run_npm_updater(top_level_dependencies:)
           SharedHelpers.with_git_configured(credentials: credentials) do
-            if top_level_dependency_updates.any?
-              run_npm_top_level_updater(top_level_dependency_updates: top_level_dependency_updates)
+            if top_level_dependencies.any?
+              run_npm_top_level_updater(top_level_dependencies: top_level_dependencies)
             else
               run_npm_subdependency_updater
             end
           end
         end
 
-        def run_npm_top_level_updater(top_level_dependency_updates:)
+        def run_npm_top_level_updater(top_level_dependencies:)
           if npm7?
-            run_npm_7_top_level_updater(top_level_dependency_updates: top_level_dependency_updates)
+            run_npm_7_top_level_updater(top_level_dependencies: top_level_dependencies)
           else
             SharedHelpers.run_helper_subprocess(
               command: NativeHelpers.helper_path,
@@ -158,20 +146,15 @@ module Dependabot
               args: [
                 Dir.pwd,
                 lockfile_basename,
-                top_level_dependency_updates
+                top_level_dependencies.map(&:to_h)
               ]
             )
           end
         end
 
-        def run_npm_7_top_level_updater(top_level_dependency_updates:)
-          # NOTE: Check if the dependencies being updated are defined in
-          # package.json files that are in the same directory as the lockfile
-          is_dependency_in_top_level_manifest = top_level_dependency_updates.any? do |dependency|
-            dependency[:requirements].any? do |req|
-              req_dir = Pathname.new(req[:file]).dirname.to_s
-              req_dir == lockfile_directory
-            end
+        def run_npm_7_top_level_updater(top_level_dependencies:)
+          is_dependency_in_current_package_json = top_level_dependencies.any? do |dependency|
+            dependency_in_package_json?(dependency)
           end
 
           # NOTE: When updating a dependency in a nested workspace project we
@@ -180,18 +163,19 @@ module Dependabot
           # requirement, otherwise npm will add the dependency as a new
           # top-level dependency to the root lockfile.
           install_args = ""
-          if is_dependency_in_top_level_manifest
-            install_args = npm_top_level_updater_args(
-              top_level_dependency_updates: top_level_dependency_updates
-            )
+          if is_dependency_in_current_package_json
+            # TODO: Update the npm 6 updater to use these args as we currently
+            # do the same in the js updater helper, we've kept it seperate for
+            # the npm 7 rollout
+            install_args = top_level_dependencies.map { |dependency| npm_install_args(dependency) }
           end
 
           # NOTE: npm options
-          # - `--dry-run=false` the updater sets a global .npmrc with dry-run: true to
-          #   work around an issue in npm 6, we don't want that here
           # - `--force` ignores checks for platform (os, cpu) and engines
-          # - `--ignore-scripts` disables prepare and prepack scripts which are run
-          #   when installing git dependencies
+          # - `--dry-run=false` the updater sets a global .npmrc with dry-run:
+          #   true to work around an issue in npm 6, we don't want that here
+          # - `--ignore-scripts` disables prepare and prepack scripts which are
+          #   run when installing git dependencies
           command = [
             "npm",
             "install",
@@ -220,9 +204,10 @@ module Dependabot
 
         def run_npm_7_subdependency_updater
           dependency_names = sub_dependencies.map(&:name)
+          # NOTE: npm options
+          # - `--force` ignores checks for platform (os, cpu) and engines
           # - `--dry-run=false` the updater sets a global .npmrc with dry-run: true to
           #   work around an issue in npm 6, we don't want that here
-          # - `--force` ignores checks for platform (os, cpu) and engines
           # - `--ignore-scripts` disables prepare and prepack scripts which are run
           #   when installing git dependencies
           command = [
@@ -239,26 +224,14 @@ module Dependabot
           { lockfile_basename => File.read(lockfile_basename) }
         end
 
-        # TODO: Update the npm 6 updater to use these args as we currently do
-        # the same in the js updater helper, we've kept it seperate for the npm
-        # 7 rollout
-        def npm_top_level_updater_args(top_level_dependency_updates:)
-          top_level_dependency_updates.map do |dependency|
-            # NOTE: For git dependencies we loose some information about the
-            # requirement that's only available in the package.json, e.g. when
-            # specifying a semver tag:
-            # `dependabot/depeendabot-core#semver:^0.1` - this is required to
-            # pass the correct install argument to `npm install`
-            existing_version_requirement = flattenend_manifest_dependencies[dependency.fetch(:name)]
-            npm_install_args(
-              dependency.fetch(:name),
-              dependency.fetch(:version),
-              dependency.fetch(:requirements),
-              existing_version_requirement
-            )
-          end
+        def updated_version_requirement_for_dependency(dependency)
+          flattenend_manifest_dependencies[dependency.name]
         end
 
+        # TODO: Add the raw updated requirement to the Dependency instance
+        # instead of fishing it out of the updated package json, we need to do
+        # this because we don't store the same requirement in
+        # Dependency#requirements for git dependencies - see PackageJsonUpdater
         def flattenend_manifest_dependencies
           return @flattenend_manifest_dependencies if defined?(@flattenend_manifest_dependencies)
 
@@ -272,26 +245,44 @@ module Dependabot
             end
         end
 
-        def npm_install_args(dep_name, desired_version, requirements, existing_version_requirement)
-          git_requirement = requirements.find { |req| req[:source] && req[:source][:type] == "git" }
+        def npm_install_args(dependency)
+          git_requirement = dependency.requirements.find { |req| req[:source] && req[:source][:type] == "git" }
 
           if git_requirement
-            existing_version_requirement ||= git_requirement[:source][:url]
+            # NOTE: For git dependencies we loose some information about the
+            # requirement that's only available in the package.json, e.g. when
+            # specifying a semver tag:
+            # `dependabot/depeendabot-core#semver:^0.1` - this is required to
+            # pass the correct install argument to `npm install`
+            updated_version_requirement = updated_version_requirement_for_dependency(dependency)
+            updated_version_requirement ||= git_requirement[:source][:url]
 
             # NOTE: Git is configured to auth over https while updating
-            existing_version_requirement = existing_version_requirement.gsub(
+            updated_version_requirement = updated_version_requirement.gsub(
               %r{git\+ssh://git@(.*?)[:/]}, 'https://\1/'
             )
 
             # NOTE: Keep any semver range that has already been updated by the
             # PackageJsonUpdater when installing the new version
-            if existing_version_requirement.include?(desired_version)
-              "#{dep_name}@#{existing_version_requirement}"
+            if updated_version_requirement.include?(dependency.version)
+              "#{dependency.name}@#{updated_version_requirement}"
             else
-              "#{dep_name}@#{existing_version_requirement.sub(/#.*/, '')}##{desired_version}"
+              "#{dependency.name}@#{updated_version_requirement.sub(/#.*/, '')}##{dependency.version}"
             end
           else
-            "#{dep_name}@#{desired_version}"
+            "#{dependency.name}@#{dependency.version}"
+          end
+        end
+
+        def dependency_in_package_json?(dependency)
+          dependency.requirements.any? do |req|
+            req[:file] == package_json.name
+          end
+        end
+
+        def dependency_in_lockfile?(dependency)
+          lockfile_dependencies.any? do |dep|
+            dep.name == dependency.name
           end
         end
 
