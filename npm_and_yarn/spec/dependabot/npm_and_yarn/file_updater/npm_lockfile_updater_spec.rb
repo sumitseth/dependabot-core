@@ -6,6 +6,7 @@ require "dependabot/npm_and_yarn/file_updater/npm_lockfile_updater"
 RSpec.describe Dependabot::NpmAndYarn::FileUpdater::NpmLockfileUpdater do
   let(:updater) do
     described_class.new(
+      lockfile: package_lock,
       dependency_files: files,
       dependencies: dependencies,
       credentials: credentials
@@ -57,7 +58,7 @@ RSpec.describe Dependabot::NpmAndYarn::FileUpdater::NpmLockfileUpdater do
 
   before { Dir.mkdir(tmp_path) unless Dir.exist?(tmp_path) }
 
-  subject(:updated_npm_lock_content) { updater.updated_lockfile_content(package_lock) }
+  subject(:updated_npm_lock_content) { updater.updated_lockfile.content }
 
   describe "npm 6 specific" do
     # NOTE: This is no longer failing in npm 7
@@ -165,6 +166,33 @@ RSpec.describe Dependabot::NpmAndYarn::FileUpdater::NpmLockfileUpdater do
           to eq("1.1.0")
         expect(parsed_lockfile.fetch("dependencies")["bus-replacement-service"]["version"]).
           to include("19c4dba3bfce7574e28f1df2138d47ab4cc665b3")
+      end
+    end
+
+    context "when the packages name needs sanitizing" do
+      let(:files) { project_dependency_files("npm7/simple") }
+
+      it "restores the packages name attribute" do
+        parsed_lockfile = JSON.parse(updated_npm_lock_content)
+        expect(parsed_lockfile.dig("packages", "", "name")).to eq("{{ name }}")
+      end
+    end
+
+    context "when there's an out of date packages name attribute" do
+      let(:files) { project_dependency_files("npm7/packages_name_outdated") }
+
+      it "updates the packages name attribute" do
+        parsed_lockfile = JSON.parse(updated_npm_lock_content)
+        expect(parsed_lockfile.dig("packages", "", "name")).to eq("package-name")
+      end
+    end
+
+    context "when the original lockfile didn't have a packages name attribute" do
+      let(:files) { project_dependency_files("npm7/packages_name_missing") }
+
+      it "doesn't add a packages name attribute" do
+        parsed_lockfile = JSON.parse(updated_npm_lock_content)
+        expect(parsed_lockfile.dig("packages", "").key?("name")).to eq(false)
       end
     end
   end
