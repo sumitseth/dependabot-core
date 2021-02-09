@@ -117,10 +117,14 @@ module Dependabot
 
         def run_previous_npm_update
           previous_top_level_dependencies = top_level_dependencies.map do |d|
-            dependency = d.dup
-            dependency.version = d.previous_version
-            dependency.requirements = d.previous_requirements
-            dependency
+            Dependabot::Dependency.new(
+              name: d.name,
+              package_manager: d.package_manager,
+              version: d.previous_version,
+              previous_version: d.previous_version,
+              requirements: d.previous_requirements,
+              previous_requirements: d.previous_requirements
+            )
           end
 
           run_npm_updater(top_level_dependencies: previous_top_level_dependencies)
