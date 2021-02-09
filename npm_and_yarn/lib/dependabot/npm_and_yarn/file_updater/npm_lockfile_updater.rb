@@ -778,7 +778,9 @@ module Dependabot
         end
 
         def npm7?
-          Dependabot::NpmAndYarn::Helpers.npm_version(lockfile.content) == "npm7"
+          return @npm7 if defined?(@npm7)
+
+          @npm7 = Dependabot::NpmAndYarn::Helpers.npm_version(lockfile.content) == "npm7"
         end
 
         def sanitized_package_json_content(content)
