@@ -1,0 +1,4598 @@
+repo_name: sumitseth/dependabot-core
+report_id: 94c0ebb5e153df855e829e4f50f5fe11
+repo_type: Public
+timestamp: '2023-11-09T02:36:53+00:00'
+requested_by: sumitseth
+provider: github
+branch: main
+detected_tools_count: 161
+tools:
+- name: Elixir
+  description: Dynamic, functional language designed for building scalable and maintainable
+    applications
+  website_url: http://elixir-lang.org/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1974/drop.png
+  detection_source: Repo Metadata
+- name: Erlang
+  description: A programming language used to build massively scalable soft real-time
+    systems with requirements on high availability
+  website_url: http://www.erlang.org/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1004/cbdf77412da183e43d41c0c0f9a7005a.jpeg
+  detection_source: Dockerfile
+- name: Golang
+  description: An open source programming language that makes it easy to build simple,
+    reliable, and efficient software
+  website_url: http://golang.org/
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1005/O6AczwfV_400x400.png
+  detection_source: Repo Metadata
+- name: JavaScript
+  description: Lightweight, interpreted, object-oriented language with first-class
+    functions
+  website_url: https://developer.mozilla.org/en-US/docs/Web/JavaScript
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1209/javascript.jpeg
+  detection_source: Repo Metadata
+- name: Jinja
+  description: Full featured template engine for Python
+  website_url: https://palletsprojects.com/p/jinja/
+  version: 2.11.2
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Templating Languages & Extensions
+  image_url: https://img.stackshare.io/service/2303/New_Project__20_.png
+  detection_source_url: python/spec/fixtures/projects/unresolvable/requirements.txt
+  detection_source: python/spec/fixtures/requirements/pip_compile_unresolvable_if_unpinned.txt
+- name: PHP
+  description: A popular general-purpose scripting language that is especially suited
+    to web development
+  website_url: http://www.php.net/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/991/hwUcGZ41_400x400.jpg
+  detection_source: Repo Metadata
+- name: Python
+  description: A clear and powerful object-oriented programming language, comparable
+    to Perl, Ruby, Scheme, or Java.
+  website_url: https://www.python.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/993/pUBY5pVj.png
+  detection_source: Repo Metadata
+- name: Ruby
+  description: A dynamic, interpreted, open source programming language with a focus
+    on simplicity and productivity
+  website_url: https://www.ruby-lang.org
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/989/ruby.png
+  detection_source: Repo Metadata
+- name: Rust
+  description: A safe, concurrent, practical language
+  website_url: http://www.rust-lang.org/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1070/v7txhrjp9pdqrkdtxxp0.png
+  detection_source: Dockerfile
+- name: TypeScript
+  description: A superset of JavaScript that compiles to clean JavaScript output
+  website_url: http://www.typescriptlang.org
+  version: 2.1.4
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/1612/bynNY5dJ.jpg
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/yarn/typedoc-plugin-ui-router/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/typedoc-plugin-ui-router/package.json
+- name: ".NET"
+  description: A free, cross-platform, open source developer platform for building
+    many different types of applications
+  website_url: http://www.microsoft.com/net/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1014/IoPy1dce_400x400.png
+  detection_source: nuget/spec/fixtures/packages_configs/packages.config
+- name: ".NET Core"
+  description: An Open Source, General-Purpose Development Platform Maintained by
+    Microsoft and the .NET Community
+  website_url: https://docs.microsoft.com/en-us/dotnet/core/
+  version: '2.0'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/6403/default_91fc1f0ee315262794273aa1387eaf8fed8436e6.png
+  detection_source_url: nuget/spec/fixtures/csproj/missing_property_version.csproj
+  detection_source: nuget/spec/fixtures/csproj/single_dep_property_version.csproj
+- name: ASP.NET Core
+  description: A cross-platform .NET framework for building modern cloud-based web
+    applications on Windows, Mac, or Linux
+  website_url: docs.microsoft.com/en-us/aspnet/core/
+  version: 5.0.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/11331/asp.net-core.png
+  detection_source_url: composer/spec/fixtures/projects/doctored/composer.lock
+  detection_source: nuget/spec/fixtures/csproj/update.csproj
+- name: Guzzle
+  description: PHP HTTP client that makes it easy to send HTTP requests and trivial
+    to integrate with web services
+  website_url: http://guzzlephp.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Microframeworks (Backend)
+  image_url: https://img.stackshare.io/service/2350/638632.png
+  detection_source: composer/spec/fixtures/projects/version_conflict_without_lockfile/composer.json
+- name: Matplotlib
+  description: A plotting library for the Python programming language
+  website_url: http://matplotlib.org
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: Charting Libraries
+  image_url: https://img.stackshare.io/service/2993/2DZC4KaA_400x400.jpg
+  detection_source: python/spec/fixtures/projects/unresolvable/requirements.txt
+- name: Node.js
+  description: A platform built on Chrome's JavaScript runtime for easily building
+    fast, scalable network applications
+  website_url: http://nodejs.org/
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1011/n1JRsFeB_400x400.png
+  detection_source: Dockerfile
+- name: React
+  description: A JavaScript library for building user interfaces
+  website_url: https://reactjs.org/
+  version: 15.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/1020/OYIaJ1KK.png
+  detection_source_url: npm_and_yarn/helpers/test/npm7/fixtures/peer-dependency-checker/peer_dependency/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/peer_dependency_multiple/package.json
+- name: Select2
+  description: The jQuery replacement for select boxes
+  website_url: https://select2.github.io/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript UI Libraries
+  image_url: https://img.stackshare.io/service/7488/select2.png
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/git_tag_dependencies/package.json
+- name: Symfony
+  description: A PHP full-stack web framework
+  website_url: http://symfony.com/
+  version: '4.0'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1197/logosf_positif_03_icon.png
+  detection_source_url: composer/spec/fixtures/projects/invalid_version_constraint/composer.json
+  detection_source: composer/spec/fixtures/projects/replaced_direct_dependency/composer.json
+- name: Tornado
+  description: A Python web framework and asynchronous networking library, originally
+    developed at FriendFeed
+  website_url: http://www.tornadoweb.org/
+  version: 6.0.4
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Frameworks (Full Stack)
+  image_url: https://img.stackshare.io/service/1002/tornado.png
+  detection_source_url: python/spec/fixtures/projects/unresolvable/requirements.txt
+  detection_source: python/spec/fixtures/requirements/pip_compile_resolves_differently_by_python.txt
+- name: Vue.js
+  description: A progressive framework for building user interfaces
+  website_url: http://vuejs.org/
+  version: 2.5.20
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript MVC Frameworks
+  image_url: https://img.stackshare.io/service/3837/paeckCWC.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/npm7/monorepo_dep_multiple/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/monorepo_dep_multiple/package.json
+- name: gRPC
+  description: A high performance, open-source universal RPC framework
+  website_url: https://grpc.io/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Remote Procedure Call (RPC)
+  image_url: https://img.stackshare.io/service/4670/default_d811b0ac72205af84aca21f967594338580be913.png
+  detection_source: go_modules/spec/fixtures/projects/unknown_revision/go.mod
+- name: guava
+  description: Google Core Libraries for Java 6+
+  website_url: https://github.com/google/guava
+  version: '23.3'
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Java Tools
+  image_url: https://img.stackshare.io/service/2970/wBjKn0ol.png
+  detection_source_url: maven/spec/fixtures/projects/invalid_repository_url/pom.xml
+  detection_source: maven/spec/fixtures/projects/invalid_version_ref/pom.xml
+- name: GraphQL
+  description: A data query language and runtime
+  website_url: http://graphql.org/
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Query Languages
+  image_url: https://img.stackshare.io/service/3820/12972006.png
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/resolutions_invalid/package.json
+- name: SQLAlchemy
+  description: The Python SQL Toolkit and Object Relational Mapper
+  website_url: http://www.sqlalchemy.org/
+  version: 1.2.9
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Object Relational Mapper (ORM)
+  image_url: https://img.stackshare.io/service/1839/q5uAkmy7.png
+  detection_source_url: python/spec/fixtures/requirements/name_clash.txt
+  detection_source: python/spec/fixtures/requirements/name_clash.txt
+- name: migra
+  description: A schema diff tool for PostgreSQL
+  website_url: https://migra.djrobstep.com/
+  license: Unlicense
+  open_source: true
+  hosted_saas: false
+  category: Data Stores
+  sub_category: Database Tools
+  image_url: https://img.stackshare.io/no-img-open-source.png
+  detection_source: composer/spec/fixtures/projects/replaced_direct_dependency/composer.json
+- name: Babel
+  description: Use next generation JavaScript, today.
+  website_url: http://babeljs.io/
+  version: 7.12.13
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: JavaScript Compilers
+  image_url: https://img.stackshare.io/service/2739/-1wfGjNw.png
+  detection_source_url: npm_and_yarn/helpers/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/no_lockfile_change/package.json
+- name: Bundler
+  description: 'A consistent environment for tracking and installing  gems and versions '
+  website_url: http://bundler.io
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/2988/4e77LXIo_400x400.png
+  detection_source: common/dependabot-common.gemspec
+- name: Codacy
+  description: Automate and Standardize Code Reviews for 40+ languages
+  website_url: https://www.codacy.com/
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/866/default_3252d282a3e0bdac472b0eb745cd8d415480559c.jpg
+  detection_source: composer/spec/fixtures/projects/media_organizer/composer.json
+- name: Code Climate
+  description: Automated Ruby Code Review
+  website_url: https://codeclimate.com/
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/305/KFgYaUkK.png
+  detection_source: composer/spec/fixtures/projects/media_organizer/composer.json
+- name: Composer
+  description: Dependency Manager for PHP
+  website_url: https://getcomposer.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/service/1688/New_Project__65_.png
+  detection_source: Dockerfile
+- name: Docker
+  description: Enterprise Container Platform for High-Velocity Innovation.
+  website_url: https://www.docker.com/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Virtual Machine Platforms & Containers
+  image_url: https://img.stackshare.io/service/586/n4u37v9t_400x400.png
+  detection_source: Repo Metadata
+- name: ESLint
+  description: The fully pluggable JavaScript code quality tool
+  website_url: http://eslint.org/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/3337/Q4L7Jncy.jpg
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/package.json
+- name: Git
+  description: Fast, scalable, distributed revision control system
+  website_url: http://git-scm.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Version Control System
+  image_url: https://img.stackshare.io/service/1046/git.png
+  detection_source: Repo Metadata
+- name: GitHub Actions
+  description: Automate your workflow from idea to production
+  website_url: https://github.com/features/actions
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/11563/actions.png
+  detection_source: ".github/workflows/gems.yml"
+- name: Gradle
+  description: A powerful build system for the JVM
+  website_url: https://www.gradle.org/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Java Build Tools
+  image_url: https://img.stackshare.io/service/975/gradlephant-social-black-bg.png
+  detection_source: gradle/spec/fixtures/buildfiles/android_build.gradle
+- name: Gunicorn
+  description: A Python WSGI HTTP Server for UNIX
+  website_url: http://gunicorn.org/
+  version: 20.0.2
+  open_source: true
+  hosted_saas: false
+  category: Application Hosting
+  sub_category: Web Servers
+  image_url: https://img.stackshare.io/service/1091/gunicorn.png
+  detection_source_url: python/spec/fixtures/requirements/jinja_requirements.txt
+  detection_source: python/spec/fixtures/requirements/jinja_requirements.txt
+- name: Jest
+  description: Painless JavaScript Unit Testing
+  website_url: http://facebook.github.io/jest/
+  version: 26.6.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/830/jest.png
+  detection_source_url: npm_and_yarn/helpers/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/no_lockfile_change/package.json
+- name: Mocha
+  description: Simple, flexible, fun javascript test framework for node.js &amp; the
+    browser
+  website_url: http://mochajs.org/
+  version: 1.21.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Javascript Testing Framework
+  image_url: https://img.stackshare.io/service/832/mocha.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/npm7/path_dependency/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/path_dependency/deps/etag/package.json
+- name: NuGet
+  description: The package manager for .NET
+  website_url: https://www.nuget.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/service/2637/6I3oEOP4_400x400.jpg
+  detection_source: nuget/spec/fixtures/packages_configs/packages.config
+- name: Octokit
+  description: GitHub API Client Library for .NET
+  website_url: https://github.com/octokit/octokit.net
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Tools for GitHub
+  image_url: https://img.stackshare.io/service/9827/octokit-dotnet_2.png
+  detection_source: common/dependabot-common.gemspec
+- name: PHPStan
+  description: PHP Static Analysis Tool - discover bugs in your code without running
+    it!
+  website_url: https://github.com/phpstan/phpstan
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/8333/phpst.png
+  detection_source: composer/spec/fixtures/projects/conflicts/composer.json
+- name: PHPUnit
+  description: Testing framework for PHP
+  website_url: https://phpunit.de/
+  version: 5.1.3
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Testing Frameworks
+  image_url: https://img.stackshare.io/service/1616/1_WsEnddd5Y4EgEHsT054kUQ.jpeg
+  detection_source_url: composer/spec/fixtures/projects/autoload/composer.lock
+  detection_source: composer/spec/fixtures/projects/unaddable_platform_req/composer.json
+- name: Prettier
+  description: 'Prettier is an opinionated code formatter. '
+  website_url: https://prettier.io/
+  version: 2.2.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/7035/default_66f265943abed56bcdbfca1c866a4261b1fbb063.jpg
+  detection_source_url: npm_and_yarn/helpers/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/typedoc-plugin-ui-router/package.json
+- name: PyPI
+  description: A repository of software for the Python programming language
+  website_url: https://pypi.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Hosted Package Repository
+  image_url: https://img.stackshare.io/service/12572/-RIWgodF_400x400.jpg
+  detection_source: python/spec/fixtures/setup_files/setup.py
+- name: RSpec
+  description: Behaviour Driven Development for Ruby
+  website_url: https://rspec.info/
+  version: '3.8'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Testing Frameworks
+  image_url: https://img.stackshare.io/service/2539/logo.png
+  detection_source_url: common/dependabot-common.gemspec
+  detection_source: common/dependabot-common.gemspec
+- name: RuboCop
+  description: A Ruby static code analyzer, based on the community Ruby style guide
+  website_url: http://batsov.com/rubocop/
+  version: 1.9.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/2643/rubocop.png
+  detection_source_url: common/dependabot-common.gemspec
+  detection_source: omnibus/Gemfile
+- name: RubyGems
+  description: Easily download, install, and use ruby software packages on your system
+  website_url: https://rubygems.org/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/service/12795/5jL6-BA5_400x400.jpeg
+  detection_source: python/spec/fixtures/requirements/pip_compile_legacy_python_3.txt
+- name: Sentry
+  description: 'See performance issues, fix errors faster, and optimize code health. '
+  website_url: https://sentry.io/welcome/?utm_source=stackshare&utm_medium=link&utm_campaign=profile
+  open_source: true
+  hosted_saas: true
+  category: Monitoring
+  sub_category: Exception Monitoring
+  image_url: https://img.stackshare.io/service/191/default_9262326592c97828a2a4299dec085a3674dd05f4.png
+  detection_source: python/spec/fixtures/setup_files/setup.py
+- name: Serilog
+  description: A portable and structured logging framework to record diagnostic logs
+  website_url: http://serilog.net/
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Monitoring
+  sub_category: Log Management
+  image_url: https://img.stackshare.io/service/4283/5691010.png
+  detection_source: nuget/spec/fixtures/csproj/basic2.csproj
+- name: Terraform
+  description: Describe your complete infrastructure as code and build resources across
+    providers
+  website_url: https://www.terraform.io/
+  license: MPL-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Server Configuration and Automation
+  image_url: https://img.stackshare.io/service/1276/default_2316907c4199f912e2ed79cbdb99025c9e5e2665.png
+  detection_source: terraform/spec/fixtures/config_files/unparseable.tf
+- name: Terraform Registry
+  description: Describe your complete infrastructure as code and build resources across
+    providers
+  website_url: https://registry.terraform.io/
+  license: MPL-2.0
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Package Managers
+  image_url: https://img.stackshare.io/package_manager/49093/default_cdf079d244bded073d455911e6ce679abb1b77ab.png
+  detection_source: terraform/spec/fixtures/config_files/unparseable.tf
+- name: Travis CI
+  description: A hosted continuous integration service for open source and private
+    projects
+  website_url: http://travis-ci.com/
+  open_source: false
+  hosted_saas: true
+  category: Build, Test, Deploy
+  sub_category: Continuous Integration
+  image_url: https://img.stackshare.io/service/460/Lu6cGu0z_400x400.png
+  detection_source: go_modules/spec/fixtures/projects/vendor/vendor/github.com/pkg/errors/.travis.yml
+- name: Visual Studio
+  description: State-of-the-art tools and services that you can use to create great
+    apps for devices, the cloud, and everything in between.
+  website_url: http://msdn.microsoft.com/en-us/vstudio/aa718325.aspx
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Integrated Development Environment
+  image_url: https://img.stackshare.io/service/1451/SR2hUhQN.png
+  detection_source: nuget/spec/fixtures/sln_files/GraphQL.Client.sln
+- name: Yarn
+  description: A new package manager for JavaScript
+  website_url: https://yarnpkg.com/
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/5848/44mC-kJ3.jpg
+  detection_source: npm_and_yarn/spec/fixtures/yarn_lockfiles/yarn.lock
+- name: flake8
+  description: Tool for style guide enforcement
+  website_url: https://github.com/PyCQA/flake8
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Code Review
+  image_url: https://img.stackshare.io/service/4838/default_c37162891c64eca7fafe782d9c191e409aae1e93.png
+  detection_source: python/spec/fixtures/requirements/pip_compile_unsafe.txt
+- name: npm
+  description: The package manager for JavaScript.
+  website_url: https://www.npmjs.com/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/1120/lejvzrnlpb308aftn31u.png
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/dist_tag/package.json
+- name: pip
+  description: A package installer for Python
+  website_url: https://pypi.org/project/pip/
+  open_source: false
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Front End Package Manager
+  image_url: https://img.stackshare.io/service/5559/-RIWgodF_400x400.jpg
+  detection_source: python/helpers/requirements.txt
+- name: pytest
+  description: A full-featured Python testing tool to help you write better programs
+  website_url: http://pytest.org/latest/
+  version: 3.5.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Build, Test, Deploy
+  sub_category: Testing Frameworks
+  image_url: https://img.stackshare.io/service/4586/Lu99Qe0Z_400x400.png
+  detection_source_url: python/spec/fixtures/requirements/pip_compile_bounded.txt
+  detection_source: python/spec/fixtures/requirements/version_specified.txt
+- name: Apollo
+  description: GraphQL server for Express, Connect, Hapi, Koa and more
+  website_url: https://www.apollographql.com/
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Application Hosting
+  sub_category: Platform as a Service
+  image_url: https://img.stackshare.io/service/5508/CyUH653y.png
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/peer_dependency_changed/package.json
+- name: Pandoc
+  description: A universal document converter
+  website_url: https://pandoc.org/
+  open_source: true
+  hosted_saas: false
+  category: Assets and Media
+  sub_category: File Conversion
+  image_url: https://img.stackshare.io/service/2330/no-img-open-source.png
+  detection_source: python/spec/fixtures/projects/unresolvable/requirements.txt
+- name: IPython
+  description: A command shell for interactive computing in multiple programming languages
+  website_url: http://ipython.org/index.html
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Shells
+  image_url: https://img.stackshare.io/service/4477/820a0bb9a44fe5a1d640993ab1e6fd84_400x400.png
+  detection_source: python/spec/fixtures/projects/unresolvable/requirements.txt
+- name: Lerna
+  description: A tool for managing JavaScript projects
+  website_url: https://lerna.js.org/
+  version: 3.6.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/6207/OwqAUSQi_400x400.jpg
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/npm6_and_yarn/lerna/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/lerna/package.json
+- name: Lodash
+  description: A JavaScript utility library
+  website_url: https://lodash.com
+  version: 4.17.20
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Javascript Utilities & Libraries
+  image_url: https://img.stackshare.io/service/2438/lodash.png
+  detection_source_url: npm_and_yarn/helpers/test/npm6/fixtures/conflicting-dependency-parser/deeply-nested/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/yanked_version/package.json
+- name: Monolog
+  website_url: https://github.com/Seldaek/monolog
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/9170/183678.jpeg
+  detection_source: composer/spec/fixtures/projects/version_conflict_without_lockfile/composer.json
+- name: NumPy
+  description: Fundamental package for scientific computing with Python
+  website_url: http://www.numpy.org/
+  version: 1.19.0
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Data Science Tools
+  image_url: https://img.stackshare.io/service/2179/default_332f874a2edb2686f578aa6389313efcea1eec41.png
+  detection_source_url: python/spec/fixtures/projects/unresolvable/requirements.txt
+  detection_source: python/spec/fixtures/requirements/pip_compile_native_dependencies.txt
+- name: Pandas
+  description: High-performance, easy-to-use data structures and data analysis tools
+    for the Python programming language
+  website_url: http://pandas.pydata.org/
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Data Science Tools
+  image_url: https://img.stackshare.io/service/2180/1284191.png
+  detection_source: python/spec/fixtures/requirements/pip_compile_native_dependencies.txt
+- name: PonyDebugger
+  description: Remote network and data debugging for your native iOS app using Chrome
+    Developer Tools
+  website_url: https://github.com/square/PonyDebugger
+  open_source: true
+  hosted_saas: false
+  category: Mobile
+  sub_category: Mobile Runtime Inspector
+  image_url: https://img.stackshare.io/service/729/Logo.png
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/yanked_version/package.json
+- name: SciPy
+  description: Scientific Computing Tools for Python
+  website_url: http://www.scipy.org
+  version: 1.5.1
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: Data Science Tools
+  image_url: https://img.stackshare.io/service/3303/scipyshiny_small.png
+  detection_source_url: python/spec/fixtures/projects/unresolvable/requirements.txt
+  detection_source: python/spec/fixtures/setup_files/setup.py
+- name: Shell
+  description: A shell is a text-based terminal, used for manipulating programs and
+    files. Shell scripts typically manage program execution.
+  website_url: https://en.wikipedia.org/wiki/Shell_script
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Languages
+  image_url: https://img.stackshare.io/service/4631/default_c2062d40130562bdc836c13dbca02d318205a962.png
+  detection_source: Repo Metadata
+- name: Ubuntu
+  description: The leading OS for PC, tablet, phone and cloud
+  website_url: http://www.ubuntu.com/
+  version: 18.04.0
+  open_source: false
+  hosted_saas: false
+  category: Languages & Frameworks
+  sub_category: Operating Systems
+  image_url: https://img.stackshare.io/service/3511/cof_orange_hex.jpg
+  detection_source_url: Dockerfile
+  detection_source: Dockerfile
+- name: boto
+  website_url: https://github.com/boto/boto
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/2764/327752.png
+  detection_source: python/spec/fixtures/requirements/pip_compile_unresolvable_if_unpinned.txt
+- name: chalk
+  description: terminal colors
+  website_url: https://github.com/chalk/chalk
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/8072/13122722.png
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/workspaces_bad/packages/package1/package.json
+- name: docutils
+  description: "http://t.co/lH6rcPxBja Service Outage and other informational alerts.\r\n\r\nFor
+    support, see ticket/IRC/email information on http://t.co/nE5akSwLqM"
+  website_url: http://docutils.sourceforge.net/
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/8480/LI68uG-2_normal.jpg
+  detection_source: python/spec/fixtures/requirements/pip_compile_unresolvable_if_unpinned.txt
+- name: husky
+  website_url: https://github.com/typicode/husky
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/9527/5502029.jpeg
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/typedoc-plugin-ui-router/package.json
+- name: lint-staged
+  website_url: https://github.com/okonet/lint-staged
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/10577/11071.jpeg
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/package.json
+- name: setuptools
+  website_url: https://github.com/pypa/setuptools
+  open_source: false
+  hosted_saas: false
+  image_url: https://img.stackshare.io/service/10517/647025.png
+  detection_source: python/spec/fixtures/requirements/pip_compile_unsafe.txt
+- name: "@types/handlebars"
+  description: TypeScript definitions for Handlebars
+  package_url: https://www.npmjs.com/@types/handlebars
+  version: 4.0.31
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17752/default_8cfeb169319d5cc646c1e13f8a10e7d7e7430d7c.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/yarn/typedoc-plugin-ui-router/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/typedoc-plugin-ui-router/package.json
+- name: apollo-client
+  description: A simple yet functional GraphQL client
+  package_url: https://www.npmjs.com/apollo-client
+  version: 2.3.5
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16731/default_9b37c4b9479b5cf61478ac117da829ccdd0ed0a0.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/npm7/peer_dependency_changed/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/peer_dependency_changed/package.json
+- name: babel-cli
+  description: Babel command line
+  package_url: https://www.npmjs.com/babel-cli
+  version: 6.26.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15804/default_97d4687bd07ff1bb963fd566c84e7cbf7c73bbee.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/package.json
+- name: babel-core
+  description: Babel compiler core
+  package_url: https://www.npmjs.com/babel-core
+  version: 6.26.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15798/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/npm6/subdependency_update/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/no_lockfile_change/package.json
+- name: babel-eslint
+  description: Custom parser for ESLint
+  package_url: https://www.npmjs.com/babel-eslint
+  version: 8.1.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15803/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/package.json
+- name: babel-jest
+  description: Jest plugin to use babel for transformation
+  package_url: https://www.npmjs.com/babel-jest
+  version: 26.6.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15839/default_4479dbac220be99e50e724b2df6cf415241d71fd.png
+  detection_source_url: npm_and_yarn/helpers/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/package.json
+- name: babel-preset-flow
+  description: Babel preset for all Flow plugins
+  package_url: https://www.npmjs.com/babel-preset-flow
+  version: 6.23.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16193/default_3d197518f6bb529bfcc1b685e2cefbdfe83ff108.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/package.json
+- name: babel-register
+  description: Babel require hook
+  package_url: https://www.npmjs.com/babel-register
+  version: 6.26.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15865/default_3af1504b6f77c55205ba630fe08c472f43b95f6e.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/npm6/subdependency_update/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/no_lockfile_change/package.json
+- name: benchmark
+  description: A benchmarking library that supports high-resolution timers &amp; returns
+    statistically significant results
+  package_url: https://www.npmjs.com/benchmark
+  version: 2.1.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16241/default_cbc604730ab04341982d806fe402cd0706cc8bf4.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/npm7/path_dependency/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/path_dependency/deps/etag/package.json
+- name: cosmiconfig
+  description: Find and load configuration from a package.json property
+  package_url: https://www.npmjs.com/cosmiconfig
+  version: 5.0.7
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17133/default_aae1698f13b22e457dce8faa3612b71379cf7a48.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/npm6_and_yarn/lerna/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/multiple_sub_dependencies/package.json
+- name: detect-indent
+  description: Detect the indentation of code
+  package_url: https://www.npmjs.com/detect-indent
+  version: 5.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18494/default_cede69e31c17bc0ea44d5859768333df0dd3c641.png
+  detection_source_url: npm_and_yarn/helpers/yarn.lock
+  detection_source: npm_and_yarn/helpers/package.json
+- name: eslint-config-airbnb-base
+  description: Airbnb's base JS ESLint config, following our styleguide
+  package_url: https://www.npmjs.com/eslint-config-airbnb-base
+  version: 12.1.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15888/default_7c39a83d4acd952df89b1ebfdb94c8646324fbf1.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/package.json
+- name: eslint-config-prettier
+  description: Turns off all rules that are unnecessary or might conflict with Prettier
+  package_url: https://www.npmjs.com/eslint-config-prettier
+  version: 7.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15879/default_0b10af8ca19c215f781dc07442e75bdc831089d0.png
+  detection_source_url: npm_and_yarn/helpers/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/package.json
+- name: eslint-config-standard
+  description: JavaScript Standard Style - ESLint Shareable Config
+  package_url: https://www.npmjs.com/eslint-config-standard
+  version: 6.2.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15872/default_e4668902f8489350db9b0fb228523a571ef05b26.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/npm7/path_dependency/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/path_dependency/deps/etag/package.json
+- name: eslint-plugin-flowtype
+  description: Flowtype linting rules for ESLint
+  package_url: https://www.npmjs.com/eslint-plugin-flowtype
+  version: 2.40.1
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15940/default_f49d4c116f8ea0155f4d92673b084378bba02760.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/package.json
+- name: eslint-plugin-import
+  description: Import with sanity
+  package_url: https://www.npmjs.com/eslint-plugin-import
+  version: 2.8.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15806/default_98aa227f51aa9d787815ec3fd98d0ab2bfebbb91.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/package.json
+- name: eslint-plugin-jest
+  description: Eslint rules for Jest
+  package_url: https://www.npmjs.com/eslint-plugin-jest
+  version: 21.5.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15996/default_7a88bebb451873cc63bd99007de5bd3bb8ef85de.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/package.json
+- name: eslint-plugin-markdown
+  description: An ESLint plugin to lint JavaScript in Markdown code fences
+  package_url: https://www.npmjs.com/eslint-plugin-markdown
+  version: 1.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16770/default_6e51a44775c61dcb2888547ad406a2f0cf2c344e.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/npm7/path_dependency/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/path_dependency/deps/etag/package.json
+- name: eslint-plugin-prettier
+  description: Runs prettier as an eslint rule
+  package_url: https://www.npmjs.com/eslint-plugin-prettier
+  version: 2.4.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15896/default_6e6e1d6bb189c8bb26c6410618bd597979578f39.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/package.json
+- name: eslint-plugin-promise
+  description: Enforce best practices for JavaScript promises
+  package_url: https://www.npmjs.com/eslint-plugin-promise
+  version: 3.4.2
+  license: ISC
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15885/default_1d65e37e65b7f80761374f0202776043277d505d.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/npm7/path_dependency/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/path_dependency/deps/etag/package.json
+- name: eslint-plugin-standard
+  description: ESlint Plugin for the Standard Linter
+  package_url: https://www.npmjs.com/eslint-plugin-standard
+  version: 2.0.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15884/default_1d65e37e65b7f80761374f0202776043277d505d.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/npm7/path_dependency/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/path_dependency/deps/etag/package.json
+- name: etag
+  description: Create simple HTTP ETags
+  package_url: https://www.npmjs.com/etag
+  version: 1.8.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17743/default_552addbbff67ec0ef62ce1d229e112d14ca818f5.png
+  detection_source_url: npm_and_yarn/spec/fixtures/npm_lockfiles/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/yanked_version/package.json
+- name: extend
+  description: Port of jQuery.extend for node.js and the browser
+  package_url: https://www.npmjs.com/extend
+  version: 3.0.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16161/default_77b54a203c743d16eddb6b6390cba17218454fa0.png
+  detection_source_url: npm_and_yarn/helpers/test/npm6/fixtures/conflicting-dependency-parser/deeply-nested/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/latest_package_requirement/package.json
+- name: flow-bin
+  description: Binary wrapper for Flow - A static type checker for JavaScript
+  package_url: https://www.npmjs.com/flow-bin
+  version: 0.61.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15957/default_f49d4c116f8ea0155f4d92673b084378bba02760.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/package.json
+- name: front-matter
+  description: Extract YAML front matter from a string
+  package_url: https://www.npmjs.com/front-matter
+  version: 2.0.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17272/default_9aa9c9d4e491c9d2d70df74bfa33cf525babb7f5.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/yarn/multiple_sub_dependencies/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/multiple_sub_dependencies/package.json
+- name: fsevents
+  description: Native Access to Mac OS-X FSEvents
+  package_url: https://www.npmjs.com/fsevents
+  version: 2.3.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16323/default_e8196e273db814cf9be505b35dec386fafb0dbaa.png
+  detection_source_url: npm_and_yarn/helpers/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/os_mismatch/package.json
+- name: istanbul
+  description: Yet another JS code coverage tool that computes statement, line, function
+    and branch coverage with module loader hooks to transparently add coverage when
+    running tests
+  package_url: https://www.npmjs.com/istanbul
+  version: 0.4.5
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15833/default_5e5e8ac63beda29f31f1844df64d4b8247570a66.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/npm7/path_dependency/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/path_dependency/deps/etag/package.json
+- name: jest-cli
+  description: Delightful JavaScript Testing
+  package_url: https://www.npmjs.com/jest-cli
+  version: 26.6.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16022/default_7a465bc85b23fd837cbc038fd1d504632c41a884.png
+  detection_source_url: npm_and_yarn/helpers/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/lockfile_only_change/package.json
+- name: json-schema-ref-parser
+  description: Parse, Resolve, and Dereference JSON Schema $ref pointers
+  package_url: https://www.npmjs.com/json-schema-ref-parser
+  version: 3.3.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18337/default_505909b81a0b4c883dedb080d9d7c8b30a5918e8.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/yarn/duplicate_indirect_dependency/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/multiple_sub_dependencies/package.json
+- name: left-pad
+  description: String left pad
+  package_url: https://www.npmjs.com/left-pad
+  version: 1.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17613/default_017d0f32a16a0d4571816fcd8b944e817a961fb6.png
+  detection_source_url: npm_and_yarn/helpers/test/npm6/fixtures/updater/original/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/package-lock/package.json
+- name: npm
+  description: A package manager for JavaScript
+  package_url: https://www.npmjs.com/npm
+  version: 5.8.0
+  license: Artistic-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16105/default_5a461d436012a0c4024534aaba303dcdb0297d24.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/yarn/dist_tag/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/dist_tag/package.json
+  vulnerabilities:
+  - name: npm Vulnerable to Global node_modules Binary Overwrite
+    cve_id: CVE-2019-16777
+    cve_url: https://github.com/advisories/GHSA-4328-8hgf-7wjr
+    detected_date: Aug 22
+    severity: high
+    first_patched: 6.13.4
+  - name: Arbitrary File Write in npm
+    cve_id: CVE-2019-16775
+    cve_url: https://github.com/advisories/GHSA-m6cx-g6qm-p2cx
+    detected_date: Aug 22
+    severity: high
+    first_patched: 6.13.3
+  - name: npm symlink reference outside of node_modules
+    cve_id: CVE-2019-16776
+    cve_url: https://github.com/advisories/GHSA-x8qc-rrcw-4r46
+    detected_date: Aug 22
+    severity: high
+    first_patched: 6.13.3
+  - name: npm CLI exposing sensitive information through logs
+    cve_id: CVE-2020-15095
+    cve_url: https://github.com/advisories/GHSA-93f3-23rq-pjfp
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 6.14.6
+- name: pretty-quick
+  description: Get Pretty Quick
+  package_url: https://www.npmjs.com/pretty-quick
+  version: 1.4.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16281/default_f130429ee56156823c8c6e94da6fb7aa07f07ba5.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/yarn/typedoc-plugin-ui-router/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/typedoc-plugin-ui-router/package.json
+- name: query-string
+  description: Parse and stringify URL query strings
+  package_url: https://www.npmjs.com/query-string
+  version: 5.1.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16244/default_380ae3d73e22c7ca1f42b96479bcd0095dabc0d3.png
+  detection_source_url: npm_and_yarn/helpers/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/github_dependency_private/package.json
+- name: raven-js
+  description: JavaScript client for Sentry
+  package_url: https://www.npmjs.com/raven-js
+  version: 3.23.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/18302/default_d05de2d31ff2708c984b6c11ea3c9ff07c2a4764.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/npm6/git_missing_version/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/git_missing_version/package.json
+- name: react-apollo
+  description: React Apollo Hooks, Components, and HOC
+  package_url: https://www.npmjs.com/react-apollo
+  version: 2.1.8
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17111/default_1dbf402c11ef653fcaedc84e608a244e30ebfb87.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/npm7/peer_dependency_changed/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/peer_dependency_changed/package.json
+- name: react-dom
+  description: React package for working with the DOM
+  package_url: https://www.npmjs.com/react-dom
+  version: 15.2.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15808/default_14fd11531839d935f920b6d55bd6f3528c890ad7.png
+  detection_source_url: npm_and_yarn/helpers/test/npm7/fixtures/peer-dependency-checker/peer_dependency/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/peer_dependency/package.json
+- name: react-modal
+  description: Accessible modal dialog component for React.JS
+  package_url: https://www.npmjs.com/react-modal
+  version: 0.6.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16926/default_ebf16e0c8af5e95030933d9e01479224b6665289.png
+  detection_source_url: npm_and_yarn/helpers/test/npm7/fixtures/peer-dependency-checker/peer_dependency_multiple/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/peer_dependency_multiple/package.json
+- name: request
+  description: Simplified HTTP request client
+  package_url: https://www.npmjs.com/request
+  version: 2.88.2
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15823/default_5e5e8ac63beda29f31f1844df64d4b8247570a66.png
+  detection_source_url: npm_and_yarn/helpers/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm6_and_yarn/diverged_sub_dependency_missing_yarn/package.json
+  vulnerabilities:
+  - name: Server-Side Request Forgery in Request
+    cve_id: CVE-2023-28155
+    cve_url: https://github.com/advisories/GHSA-p8p7-x288-28g6
+    detected_date: Mar 17
+    severity: moderate
+    first_patched: 
+- name: rimraf
+  description: A deep deletion module for node
+  package_url: https://www.npmjs.com/rimraf
+  version: 3.0.2
+  license: ISC
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15807/default_db4a7791d2f1174547374b9b587bc10fec088a5a.png
+  detection_source_url: npm_and_yarn/helpers/test/npm6/fixtures/conflicting-dependency-parser/deeply-nested/package-lock.json
+  detection_source: npm_and_yarn/helpers/package.json
+- name: seedrandom
+  description: Seeded random number generator for Javascript
+  package_url: https://www.npmjs.com/seedrandom
+  version: 2.4.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17815/default_78858facb60c08d15198eb69a6c7f48463f2c09f.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/npm7/path_dependency/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/path_dependency/deps/etag/package.json
+- name: slick-carousel
+  description: The last carousel you'll ever need
+  package_url: https://www.npmjs.com/slick-carousel
+  version: 1.7.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/17737/default_9693d58c90f5c726ee648423687212d2a94266da.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/npm6_and_yarn/git_dependency_git_url/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/git_dependency_git_url/package.json
+- name: typedoc
+  description: Create api documentation for TypeScript projects
+  package_url: https://www.npmjs.com/typedoc
+  version: 0.5.3
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15983/default_8b5680d4e916298d08363c291a0d6e34c07ceb15.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/yarn/typedoc-plugin-ui-router/yarn.lock
+  detection_source: npm_and_yarn/spec/fixtures/projects/yarn/typedoc-plugin-ui-router/package.json
+- name: vue
+  description: Vue
+  package_url: https://www.npmjs.com/vue
+  version: 2.5.20
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15844/default_b71c906aeda030a5e2f1fe40bf12a93be52404ab.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/npm7/monorepo_dep_multiple/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/monorepo_dep_multiple/package.json
+- name: vue-template-compiler
+  description: Template compiler for Vue 2.0
+  package_url: https://www.npmjs.com/vue-template-compiler
+  version: 2.5.20
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/15850/default_0b10af8ca19c215f781dc07442e75bdc831089d0.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/npm7/monorepo_dep_multiple/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/monorepo_dep_multiple/package.json
+- name: web3
+  description: Ethereum JavaScript API
+  package_url: https://www.npmjs.com/web3
+  version: 0.18.4
+  license: LGPL-3.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: npm Packages
+  image_url: https://img.stackshare.io/package/16369/default_17385ab3aa01d4c295c08d4a9736140df691c5e9.png
+  detection_source_url: npm_and_yarn/spec/fixtures/projects/npm6/git_sub_dep_invalid_from/package-lock.json
+  detection_source: npm_and_yarn/spec/fixtures/projects/npm7/git_sub_dep_invalid_from/package.json
+  vulnerabilities:
+  - name: Insecure Credential Storage in web3
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-27v7-qhfv-rqq8
+    detected_date: Aug 22
+    severity: low
+    first_patched: 
+- name: byebug
+  description: Byebug is a Ruby debugger
+  package_url: https://rubygems.org/byebug
+  version: '11.0'
+  license: BSD-2-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18849/default_887cb273c504fac90d07fc552b7b223fbb32ca39.png
+  detection_source_url: common/dependabot-common.gemspec
+  detection_source: common/dependabot-common.gemspec
+- name: debase
+  description: Debase is a fast implementation of the standard Ruby debugger debug.rb
+    for Ruby 2.0
+  package_url: https://rubygems.org/debase
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19629/default_c20e52921fb58565300f75e5cc64e8813f40ba54.png
+  detection_source: omnibus/Gemfile
+- name: excon
+  description: EXtended http
+  package_url: https://rubygems.org/excon
+  version: '0.75'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18969/default_9d52aa709072720d10689abb364a46204bb87784.png
+  detection_source_url: common/dependabot-common.gemspec
+  detection_source: common/dependabot-common.gemspec
+- name: gpgme
+  description: Ruby-GPGME is a Ruby language binding of GPGME
+  package_url: https://rubygems.org/gpgme
+  version: '2.0'
+  license: LGPL-2.1
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19744/default_718a184954a43aa71921505c2d24f0ff89ec41bb.png
+  detection_source_url: common/dependabot-common.gemspec
+  detection_source: common/dependabot-common.gemspec
+- name: nokogiri
+  description: Nokogiri
+  package_url: https://rubygems.org/nokogiri
+  version: '1.8'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18823/default_b8fbb83e23c963442e15398c5b56262cc6267d6f.png
+  detection_source_url: common/dependabot-common.gemspec
+  detection_source: common/dependabot-common.gemspec
+  vulnerabilities:
+  - name: Nokogiri Command Injection Vulnerability
+    cve_id: CVE-2019-5477
+    cve_url: https://github.com/advisories/GHSA-cr5j-953j-xw5p
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 1.10.4
+  - name: Nokogiri vulnerable to libxslt protection mechanism bypass
+    cve_id: CVE-2019-11068
+    cve_url: https://github.com/advisories/GHSA-qxcg-xjjg-66mj
+    detected_date: Mar 9
+    severity: critical
+    first_patched: 1.10.3
+  - name: libxml as used in Nokogiri has an infinite loop in a certain end-of-file
+      situation
+    cve_id: CVE-2020-7595
+    cve_url: https://github.com/advisories/GHSA-7553-jr98-vx47
+    detected_date: Aug 22
+    severity: high
+    first_patched: 1.10.8
+  - name: Nokogiri Implements libxml2 version vulnerable to use-after-free
+    cve_id: CVE-2021-3518
+    cve_url: https://github.com/advisories/GHSA-v4f8-2847-rwm7
+    detected_date: Jul 6
+    severity: high
+    first_patched: 1.11.4
+  - name: Nokogiri affected by zlib's Out-of-bounds Write vulnerability
+    cve_id: CVE-2018-25032
+    cve_url: https://github.com/advisories/GHSA-jc36-42cf-vqwj
+    detected_date: Jun 28
+    severity: high
+    first_patched: 1.13.4
+  - name: Improper Restriction of XML External Entity Reference (XXE) in Nokogiri
+      on JRuby
+    cve_id: CVE-2021-41098
+    cve_url: https://github.com/advisories/GHSA-2rr5-8q37-2w7h
+    detected_date: Sep 28
+    severity: high
+    first_patched: 1.12.5
+  - name: Nokogiri NULL Pointer Dereference
+    cve_id: CVE-2018-14404
+    cve_url: https://github.com/advisories/GHSA-6qvp-r6r3-9p7h
+    detected_date: Aug 22
+    severity: high
+    first_patched: 1.8.5
+  - name: Out-of-bounds read in nokogiri
+    cve_id: CVE-2017-9050
+    cve_url: https://github.com/advisories/GHSA-8c56-cpmw-89x7
+    detected_date: Aug 22
+    severity: high
+    first_patched: 1.8.1
+  - name: Nokogiri Inefficient Regular Expression Complexity
+    cve_id: CVE-2022-24836
+    cve_url: https://github.com/advisories/GHSA-crjr-9rc5-ghw8
+    detected_date: Apr 12
+    severity: high
+    first_patched: 1.13.4
+  - name: Nokogiri Improperly Handles Unexpected Data Type
+    cve_id: CVE-2022-29181
+    cve_url: https://github.com/advisories/GHSA-xh29-r2w5-wx8m
+    detected_date: May 24
+    severity: high
+    first_patched: 1.13.6
+  - name: Nokogiri gem, via libxml, is affected by DoS vulnerabilities
+    cve_id: CVE-2017-15412
+    cve_url: https://github.com/advisories/GHSA-r58r-74gx-6wx3
+    detected_date: Aug 26
+    severity: high
+    first_patched: 1.8.2
+  - name: Nokogiri contains libxml Out-of-bounds Write vulnerability
+    cve_id: CVE-2021-3517
+    cve_url: https://github.com/advisories/GHSA-jw9f-hh49-cvp9
+    detected_date: Mar 9
+    severity: high
+    first_patched: 1.11.4
+  - name: Nokogiri implementation of libxslt vulnerable to heap corruption
+    cve_id: CVE-2019-5815
+    cve_url: https://github.com/advisories/GHSA-vmfx-gcfq-wvm2
+    detected_date: Jul 8
+    severity: high
+    first_patched: 1.10.5
+  - name: Nokogiri affected by libxslt Use of Uninitialized Resource/Use After Free
+      vulnerability
+    cve_id: CVE-2019-18197
+    cve_url: https://github.com/advisories/GHSA-242x-7cm6-4w8j
+    detected_date: Jul 8
+    severity: high
+    first_patched: 1.10.5
+  - name: Nokogiri gem, via libxml, is affected by DoS vulnerabilities
+    cve_id: CVE-2017-16932
+    cve_url: https://github.com/advisories/GHSA-x2fm-93ww-ggvx
+    detected_date: Jun 10
+    severity: high
+    first_patched: 1.8.1
+  - name: Uninitialized read in Nokogiri gem
+    cve_id: CVE-2019-13117
+    cve_url: https://github.com/advisories/GHSA-4hm9-844j-jmxp
+    detected_date: Jun 10
+    severity: high
+    first_patched: 1.10.5
+  - name: Nokogiri has vulnerable dependencies on libxml2 and libxslt
+    cve_id: CVE-2021-30560
+    cve_url: https://github.com/advisories/GHSA-59gp-qqm7-cw4j
+    detected_date: Jun 28
+    severity: high
+    first_patched: 1.13.2
+  - name: Integer Overflow or Wraparound in libxml2 affects Nokogiri
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-cgx6-hpwq-fhv5
+    detected_date: May 19
+    severity: high
+    first_patched: 1.13.5
+  - name: Vulnerable dependencies in Nokogiri
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-fq42-c5rg-92c2
+    detected_date: Feb 26
+    severity: high
+    first_patched: 1.13.2
+  - name: Denial of Service (DoS) in Nokogiri on JRuby
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-gx8x-g87m-h5q6
+    detected_date: Apr 12
+    severity: high
+    first_patched: 1.13.4
+  - name: Out-of-bounds Write in zlib affects Nokogiri
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-v6gp-9mmm-c6p5
+    detected_date: Apr 12
+    severity: high
+    first_patched: 1.13.4
+  - name: libxslt Type Confusion vulnerability that affects Nokogiri
+    cve_id: CVE-2019-13118
+    cve_url: https://github.com/advisories/GHSA-cf46-6xxh-pc75
+    detected_date: Mar 9
+    severity: high
+    first_patched: 1.10.5
+  - name: Cross-site Scripting in loofah
+    cve_id: CVE-2018-8048
+    cve_url: https://github.com/advisories/GHSA-x7rv-cr6v-4vm4
+    detected_date: Jun 10
+    severity: moderate
+    first_patched: 1.8.3
+  - name: Nokogiri::XML::Schema trusts input by default, exposing risk of XXE vulnerability
+    cve_id: CVE-2020-26247
+    cve_url: https://github.com/advisories/GHSA-vr8q-g5c7-m54m
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 1.11.0
+  - name: Nokogiri updates packaged libxml2 to v2.10.4 to resolve multiple CVEs
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-pxvg-2qj5-37jq
+    detected_date: Apr 12
+    severity: moderate
+    first_patched: 1.14.3
+  - name: Nokogiri Implements libxml2 version vulnerable to null pointer dereferencing
+    cve_id: CVE-2021-3537
+    cve_url: https://github.com/advisories/GHSA-286v-pcf5-25rc
+    detected_date: Jul 6
+    severity: moderate
+    first_patched: 1.11.4
+  - name: Uncontrolled resource consumption in nokogiri
+    cve_id: CVE-2017-18258
+    cve_url: https://github.com/advisories/GHSA-882p-jqgm-f45g
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 1.8.2
+  - name: Update bundled libxml2 to v2.10.3 to resolve multiple CVEs
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-2qc6-mcvw-92cw
+    detected_date: Oct 18
+    severity: moderate
+    first_patched: 1.13.9
+  - name: XML Injection in Xerces Java affects Nokogiri
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-xxx9-3xcr-gjj3
+    detected_date: Apr 12
+    severity: moderate
+    first_patched: 1.13.4
+  - name: Nokogiri updates packaged dependency on libxml2 from 2.9.10 to 2.9.12
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-7rrm-v45f-jp64
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 1.11.4
+- name: parser
+  description: A Ruby parser written in pure Ruby
+  package_url: https://rubygems.org/parser
+  version: '2.5'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19098/default_c79cdbecd755f1567525da31906de0b95f65de72.png
+  detection_source_url: common/dependabot-common.gemspec
+  detection_source: common/dependabot-common.gemspec
+- name: rake
+  description: Rake is a Make-like program implemented in Ruby
+  package_url: https://rubygems.org/rake
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18812/default_f582e4648f4682adb72d2b201218cda7f8e894ac.png
+  detection_source: common/dependabot-common.gemspec
+- name: reek
+  description: Reek is a tool that examines Ruby classes
+  package_url: https://rubygems.org/reek
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18943/default_a51418802dbfb428c729400211798b5046fe4140.png
+  detection_source: omnibus/Gemfile
+- name: rspec-its
+  description: RSpec extension gem for attribute matching
+  package_url: https://rubygems.org/rspec-its
+  version: '1.2'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18880/default_b1cb499f3e62fe773109c989f76e3365fbe49857.png
+  detection_source_url: common/dependabot-common.gemspec
+  detection_source: common/dependabot-common.gemspec
+- name: ruby-debug-ide
+  description: An interface which glues ruby-debug to IDEs like Eclipse
+  package_url: https://rubygems.org/ruby-debug-ide
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19526/default_094c86977512a69c9da9fafbee53c1a343f675a1.png
+  detection_source: omnibus/Gemfile
+- name: simplecov
+  description: Code coverage for Ruby 1.9+ with a powerful configuration library and
+    automatic merging of coverage across test suites
+  package_url: https://rubygems.org/simplecov
+  version: 0.21.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18819/default_6564ae059af6c4ea7065fd2329370c7a05341cf8.png
+  detection_source_url: common/dependabot-common.gemspec
+  detection_source: common/dependabot-common.gemspec
+- name: simplecov-console
+  description: Simple console output formatter for SimpleCov
+  package_url: https://rubygems.org/simplecov-console
+  version: 0.9.1
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19053/default_2be036aaca5c71baf790e00f1ef80dd37a625905.png
+  detection_source_url: common/dependabot-common.gemspec
+  detection_source: common/dependabot-common.gemspec
+- name: toml-rb
+  description: A Toml parser using Citrus parsing library
+  package_url: https://rubygems.org/toml-rb
+  version: 1.1.2
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/19753/default_3698a188ebc455040a6f771f76bcb8ed99199d5f.png
+  detection_source_url: common/dependabot-common.gemspec
+  detection_source: common/dependabot-common.gemspec
+- name: vcr
+  description: Record your test suite's HTTP interactions and replay them during future
+    test runs for fast
+  package_url: https://rubygems.org/vcr
+  version: 6.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18842/default_49e8e438a279d3b7963273823890f9482ce83fb4.png
+  detection_source_url: common/dependabot-common.gemspec
+  detection_source: common/dependabot-common.gemspec
+- name: webmock
+  description: WebMock allows stubbing HTTP requests and setting expectations on HTTP
+    requests
+  package_url: https://rubygems.org/webmock
+  version: '3.4'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: RubyGems Packages
+  image_url: https://img.stackshare.io/package/18824/default_6564ae059af6c4ea7065fd2329370c7a05341cf8.png
+  detection_source_url: common/dependabot-common.gemspec
+  detection_source: common/dependabot-common.gemspec
+- name: Microsoft.AspNetCore.App
+  description: Provides a default set of APIs for building an ASP.NET Core application
+  package_url: https://www.nuget.org/Microsoft.AspNetCore.App
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13005/default_aa8a6e377c22dbeff795489a5ab127b1d597b5ed.png
+  detection_source: nuget/spec/fixtures/csproj/update.csproj
+- name: Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+  description: Replacement CodeDOM providers that use the new .NET Compiler Platform
+  package_url: https://www.nuget.org/Microsoft.CodeDom.Providers.DotNetCompilerPlatform
+  version: 1.0.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13106/default_048f7c1081704627a12b8b5e168cfdbc9f28fb33.png
+  detection_source_url: nuget/spec/fixtures/packages_configs/packages.config
+  detection_source: nuget/spec/fixtures/packages_configs/packages.config
+- name: Microsoft.Extensions.DependencyModel
+  description: Abstractions for reading `.deps` files
+  package_url: https://www.nuget.org/Microsoft.Extensions.DependencyModel
+  version: 1.1.1
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12941/default_54d470a1e19c265eb229b6bd88965fb8df9f9f78.png
+  detection_source_url: nuget/spec/fixtures/csproj/basic.csproj
+  detection_source: nuget/spec/fixtures/projects/version_range/my.csproj
+- name: Microsoft.Extensions.PlatformAbstractions
+  description: Abstractions that unify behavior and API across .NET Framework
+  package_url: https://www.nuget.org/Microsoft.Extensions.PlatformAbstractions
+  version: 1.1.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13040/default_ed36ff3c005af695725e05bb15ea5b1f03de31f3.png
+  detection_source_url: nuget/spec/fixtures/csproj/update.csproj
+  detection_source: nuget/spec/fixtures/csproj/update.csproj
+- name: Microsoft.Net.Compilers
+  description: 'Note: This package is deprecated'
+  package_url: https://www.nuget.org/Microsoft.Net.Compilers
+  version: 1.0.0
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13170/default_81ac985912284073db895b0d26abf3657532a164.png
+  detection_source_url: nuget/spec/fixtures/packages_configs/packages.config
+  detection_source: nuget/spec/fixtures/packages_configs/packages.config
+- name: Microsoft.Web.Infrastructure
+  description: This package contains the Microsoft.Web.Infrastructure assembly that
+    lets you dynamically register HTTP modules at run time
+  package_url: https://www.nuget.org/Microsoft.Web.Infrastructure
+  version: 1.0.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/12927/default_2aeaea161c566d1abfbaf3f2206fda12b1eea9cd.png
+  detection_source_url: nuget/spec/fixtures/packages_configs/packages.config
+  detection_source: nuget/spec/fixtures/packages_configs/packages.config
+- name: Microsoft.Web.Xdt
+  description: Microsoft Xml Document Transformation
+  package_url: https://www.nuget.org/Microsoft.Web.Xdt
+  version: 2.1.1
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13198/default_7bf60c4b32af3c8741e8825972e95cdf35308a6a.png
+  detection_source_url: nuget/spec/fixtures/packages_configs/packages.config
+  detection_source: nuget/spec/fixtures/packages_configs/packages.config
+- name: Newtonsoft.Json
+  description: Json.NET is a popular high-performance JSON framework for .NET
+  package_url: https://www.nuget.org/Newtonsoft.Json
+  version: 8.0.3
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/nuget/image.png
+  detection_source_url: nuget/spec/fixtures/packages_configs/packages.config
+  detection_source: nuget/spec/fixtures/packages_configs/packages.config
+  vulnerabilities:
+  - name: Improper Handling of Exceptional Conditions in Newtonsoft.Json
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-5crp-9r3c-p9vr
+    detected_date: Jun 23
+    severity: high
+    first_patched: 13.0.1
+- name: NuGet.Core
+  description: NuGet.Core is the core framework assembly for NuGet that the rest of
+    NuGet builds upon
+  package_url: https://www.nuget.org/NuGet.Core
+  version: 2.11.1
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13223/default_e23dabba1be2c69fbf5fc50bdc46cbffbe6ca2cb.png
+  detection_source_url: nuget/spec/fixtures/packages_configs/packages.config
+  detection_source: nuget/spec/fixtures/packages_configs/packages.config
+- name: NuGet.Server
+  description: Web Application used to host a simple NuGet feed
+  package_url: https://www.nuget.org/NuGet.Server
+  version: 2.11.2
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/14831/default_6e5a685818280b7ef6cd4d407488c24c5de03617.png
+  detection_source_url: nuget/spec/fixtures/packages_configs/packages.config
+  detection_source: nuget/spec/fixtures/packages_configs/packages.config
+- name: Nuke.Common
+  description: Cross-platform build automation system
+  package_url: https://www.nuget.org/Nuke.Common
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/14369/default_7ee57076546c5d89d1c4056cbbb2bd2ab883c607.png
+  detection_source: nuget/spec/fixtures/csproj/single_dep_property_version.csproj
+- name: System.Collections.Specialized
+  description: Provides older specialized non-generic collections; for example, a
+    linked list dictionary, a bit vector, and collections that contain only strings
+  package_url: https://www.nuget.org/System.Collections.Specialized
+  version: 4.3.0
+  open_source: false
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13025/default_79c0a8d9add56bcf90325ea0ad034f66b38d8dd7.png
+  detection_source_url: nuget/spec/fixtures/csproj/basic.csproj
+  detection_source: nuget/spec/fixtures/csproj/update.csproj
+- name: WebActivatorEx
+  description: A package that allows other packages to execute some startup code in
+    web apps
+  package_url: https://www.nuget.org/WebActivatorEx
+  version: 2.1.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: NuGet Packages
+  image_url: https://img.stackshare.io/package/13008/default_aa8a6e377c22dbeff795489a5ab127b1d597b5ed.png
+  detection_source_url: nuget/spec/fixtures/packages_configs/packages.config
+  detection_source: nuget/spec/fixtures/packages_configs/packages.config
+- name: Pillow
+  description: Python Imaging Library
+  package_url: https://pypi.org/Pillow
+  version: '5.1'
+  license: HPND
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19844/default_accee5d2b8ed75c2245f13504daf75b1cbc8cc9f.png
+  detection_source_url: python/spec/fixtures/pyproject_files/pyproject.toml
+  detection_source: python/spec/fixtures/pyproject_files/pyproject.toml
+  vulnerabilities:
+  - name: Out-of-bounds Read in Pillow
+    cve_id: CVE-2021-25287
+    cve_url: https://github.com/advisories/GHSA-77gc-v2xv-rvvh
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 8.2.0
+  - name: Arbitrary expression injection in Pillow
+    cve_id: CVE-2022-22817
+    cve_url: https://github.com/advisories/GHSA-8vj2-vxx3-667w
+    detected_date: Jan 18
+    severity: critical
+    first_patched: 9.0.1
+  - name: Out-of-bounds Read
+    cve_id: CVE-2021-25288
+    cve_url: https://github.com/advisories/GHSA-rwv7-3v45-hg29
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 8.2.0
+  - name: Path traversal in Pillow
+    cve_id: CVE-2022-24303
+    cve_url: https://github.com/advisories/GHSA-9j59-75qj-795w
+    detected_date: Mar 12
+    severity: critical
+    first_patched: 9.0.1
+  - name: Buffer overflow in Pillow
+    cve_id: CVE-2020-10379
+    cve_url: https://github.com/advisories/GHSA-8843-m7mw-mxqm
+    detected_date: Aug 22
+    severity: high
+    first_patched: 7.1.0
+  - name: Pillow Out-of-bounds Read
+    cve_id: CVE-2020-35653
+    cve_url: https://github.com/advisories/GHSA-f5g8-5qq7-938w
+    detected_date: Aug 22
+    severity: high
+    first_patched: 8.1.0
+  - name: PCX P mode buffer overflow in Pillow
+    cve_id: CVE-2020-5312
+    cve_url: https://github.com/advisories/GHSA-p49h-hjvm-jg3h
+    detected_date: Jan 18
+    severity: high
+    first_patched: 6.2.2
+  - name: Integer overflow in Pillow
+    cve_id: CVE-2020-5310
+    cve_url: https://github.com/advisories/GHSA-vcqg-3p29-xw73
+    detected_date: Jan 18
+    severity: high
+    first_patched: 6.2.2
+  - name: Pillow Denial of Service by Uncontrolled Resource Consumption
+    cve_id: CVE-2021-27921
+    cve_url: https://github.com/advisories/GHSA-f4w8-cv6p-x6r5
+    detected_date: Aug 22
+    severity: high
+    first_patched: 8.1.1
+  - name: Out of bounds read in Pillow
+    cve_id: CVE-2021-25293
+    cve_url: https://github.com/advisories/GHSA-p43w-g3c5-g5mq
+    detected_date: Aug 22
+    severity: high
+    first_patched: 8.1.1
+  - name: Out-of-bounds Write in Pillow
+    cve_id: CVE-2021-25290
+    cve_url: https://github.com/advisories/GHSA-8xjq-8fcg-g5hw
+    detected_date: Aug 22
+    severity: high
+    first_patched: 8.1.1
+  - name: Out of bounds read in Pillow
+    cve_id: CVE-2021-25291
+    cve_url: https://github.com/advisories/GHSA-mvg9-xffr-p774
+    detected_date: Aug 22
+    severity: high
+    first_patched: 8.2.0
+  - name: Out-of-bounds read in Pillow
+    cve_id: CVE-2020-11538
+    cve_url: https://github.com/advisories/GHSA-43fq-w8qq-v88h
+    detected_date: Aug 22
+    severity: high
+    first_patched: 7.1.0
+  - name: Potential infinite loop in Pillow
+    cve_id: CVE-2021-28676
+    cve_url: https://github.com/advisories/GHSA-7r7m-5h27-29hp
+    detected_date: Aug 22
+    severity: high
+    first_patched: 8.2.0
+  - name: Uncontrolled Resource Consumption in Pillow
+    cve_id: CVE-2021-28677
+    cve_url: https://github.com/advisories/GHSA-q5hq-fp76-qmrc
+    detected_date: Aug 22
+    severity: high
+    first_patched: 8.2.0
+  - name: 'libwebp: OOB write in BuildHuffmanTable'
+    cve_id: CVE-2023-4863
+    cve_url: https://github.com/advisories/GHSA-j7hp-h8jx-5ppr
+    detected_date: Oct 4
+    severity: high
+    first_patched: 10.0.1
+  - name: Pillow Denial of Service by Uncontrolled Resource Consumption
+    cve_id: CVE-2021-27923
+    cve_url: https://github.com/advisories/GHSA-95q3-8gr9-gm8w
+    detected_date: Aug 22
+    severity: high
+    first_patched: 8.1.1
+  - name: Uncontrolled Resource Consumption in Pillow
+    cve_id: CVE-2019-19911
+    cve_url: https://github.com/advisories/GHSA-5gm3-px64-rw72
+    detected_date: Aug 22
+    severity: high
+    first_patched: 6.2.2
+  - name: Out-of-bounds Read in Pillow
+    cve_id: CVE-2020-5313
+    cve_url: https://github.com/advisories/GHSA-hj69-c76v-86wr
+    detected_date: Aug 22
+    severity: high
+    first_patched: 6.2.2
+  - name: Pillow Out-of-bounds Write
+    cve_id: CVE-2020-35654
+    cve_url: https://github.com/advisories/GHSA-vqcj-wrf2-7v73
+    detected_date: Aug 22
+    severity: high
+    first_patched: 8.1.0
+  - name: Pillow Uncontrolled Resource Consumption
+    cve_id: CVE-2021-27922
+    cve_url: https://github.com/advisories/GHSA-3wvg-mj6g-m9cv
+    detected_date: Aug 22
+    severity: high
+    first_patched: 8.1.1
+  - name: Pillow Denial of service
+    cve_id: CVE-2021-28675
+    cve_url: https://github.com/advisories/GHSA-g6rj-rv7j-xwp4
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 8.2.0
+  - name: Improper Initialization in Pillow
+    cve_id: CVE-2022-22815
+    cve_url: https://github.com/advisories/GHSA-pw3c-h7wp-cvhx
+    detected_date: Jan 18
+    severity: moderate
+    first_patched: 9.0.0
+  - name: Insufficient Verification of Data Authenticity in Pillow
+    cve_id: CVE-2021-28678
+    cve_url: https://github.com/advisories/GHSA-hjfx-8p6c-g7gx
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 8.2.0
+  - name: Out-of-bounds read in Pillow
+    cve_id: CVE-2020-10378
+    cve_url: https://github.com/advisories/GHSA-3xv8-3j54-hgrp
+    detected_date: Jan 18
+    severity: moderate
+    first_patched: 7.1.0
+  - name: Pillow Out-of-bounds Read
+    cve_id: CVE-2020-35655
+    cve_url: https://github.com/advisories/GHSA-hf64-x4gq-p99h
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 8.1.0
+  - name: Out-of-bounds Read in Pillow
+    cve_id: CVE-2022-22816
+    cve_url: https://github.com/advisories/GHSA-xrcv-f9gm-v42c
+    detected_date: Jan 18
+    severity: moderate
+    first_patched: 9.0.0
+  - name: Out-of-bounds reads in Pillow
+    cve_id: CVE-2020-10177
+    cve_url: https://github.com/advisories/GHSA-cqhg-xjhh-p8hf
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 7.1.0
+  - name: Regular Expression Denial of Service (ReDoS) in Pillow
+    cve_id: CVE-2021-25292
+    cve_url: https://github.com/advisories/GHSA-9hx2-hgq2-2g4f
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 8.1.1
+  - name: Out-of-bounds reads in Pillow
+    cve_id: CVE-2020-10994
+    cve_url: https://github.com/advisories/GHSA-vj42-xq3r-hr3r
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 7.1.0
+  - name: Infinite loop in Pillow
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-4fx9-vc88-q2xc
+    detected_date: Mar 12
+    severity: low
+    first_patched: 9.0.0
+- name: black
+  description: The uncompromising code formatter
+  package_url: https://pypi.org/black
+  version: '18.5'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20099/default_029b9bbfb6be2cd34bebeda5b8e1e80a1d22441c.png
+  detection_source_url: python/spec/fixtures/pyproject_files/pyproject.toml
+  detection_source: python/spec/fixtures/pyproject_files/pyproject.toml
+- name: geopy
+  description: Python Geocoding Toolbox
+  package_url: https://pypi.org/geopy
+  version: '1.13'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20597/default_765f8741ddac0d2e816e17438b35e7fda5019b4a.png
+  detection_source_url: python/spec/fixtures/pyproject_files/pyproject.toml
+  detection_source: python/spec/fixtures/pyproject_files/pyproject.toml
+- name: hypothesis
+  description: A library for property-based testing
+  package_url: https://pypi.org/hypothesis
+  version: '3.56'
+  license: MPL-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20178/default_cce94831138206ab61e361b18c1d852a1e5ab6a1.png
+  detection_source_url: python/spec/fixtures/pyproject_files/pyproject.toml
+  detection_source: python/spec/fixtures/pyproject_files/pyproject.toml
+- name: mypy
+  description: Optional static typing for Python
+  package_url: https://pypi.org/mypy
+  version: '0.600'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20219/default_d4dd0466552a9776ca8535b869e22a3362790c94.png
+  detection_source_url: python/spec/fixtures/pyproject_files/pyproject.toml
+  detection_source: python/spec/fixtures/pyproject_files/pyproject.toml
+- name: pep8
+  description: Python style guide checker
+  package_url: https://pypi.org/pep8
+  version: 1.7.0
+  license: Saxpath
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20602/default_430d28419e5efde85a59e0f374f43c9e7b7ed15b.png
+  detection_source_url: python/spec/fixtures/setup_files/setup.py
+  detection_source: python/spec/fixtures/setup_files/setup.py
+- name: pytest-cov
+  description: Pytest plugin for measuring coverage
+  package_url: https://pypi.org/pytest-cov
+  version: '2.5'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19958/default_e91a78767854f0fa80aab2f13d1a25b15ca2d278.png
+  detection_source_url: python/spec/fixtures/pyproject_files/pyproject.toml
+  detection_source: python/spec/fixtures/pyproject_files/pyproject.toml
+- name: pytest-mock
+  description: Thin-wrapper around the mock package for easier use with py.test
+  package_url: https://pypi.org/pytest-mock
+  version: '1.9'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20244/default_fc0d35561378e21d3174def06634c96515818661.png
+  detection_source_url: python/spec/fixtures/pyproject_files/pyproject.toml
+  detection_source: python/spec/fixtures/pyproject_files/pyproject.toml
+- name: scikit-learn
+  description: A set of python modules for machine learning and data mining
+  package_url: https://pypi.org/scikit-learn
+  version: 0.23.1
+  license: BSD-3-Clause
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19898/default_4343f8bba4f6051641ffca8b4fbe9b099402c84d.png
+  detection_source_url: python/spec/fixtures/projects/unresolvable/requirements.txt
+  detection_source: python/spec/fixtures/setup_files/setup.py
+- name: tensorflow
+  description: TensorFlow is an open source machine learning framework for everyone
+  package_url: https://pypi.org/tensorflow
+  version: 2.1.0
+  license: Apache-2.0
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/20741/default_fcf0af2bde4cd6c1117b6ebf7edb1b4f548e6507.png
+  detection_source_url: python/spec/fixtures/projects/pipenv/missing-system-library/Pipfile.lock
+  detection_source: python/spec/fixtures/projects/pipenv/missing-system-library/Pipfile
+  vulnerabilities:
+  - name: Arbitrary code execution due to YAML deserialization
+    cve_id: CVE-2021-37678
+    cve_url: https://github.com/advisories/GHSA-r6jx-9g48-2r5r
+    detected_date: Aug 26
+    severity: critical
+    first_patched: 2.3.4
+  - name: TensorFlow has a heap out-of-buffer read vulnerability in the QuantizeAndDequantize
+      operation
+    cve_id: CVE-2023-25668
+    cve_url: https://github.com/advisories/GHSA-gw97-ff7c-9v96
+    detected_date: Mar 25
+    severity: critical
+    first_patched: 2.11.1
+  - name: Integer truncation in Shard API usage
+    cve_id: CVE-2020-15202
+    cve_url: https://github.com/advisories/GHSA-h6fg-mjxg-hqq4
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.1.2
+  - name: NULL Pointer Dereference and Access of Uninitialized Pointer in TensorFlow
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-h6gw-r52c-724r
+    detected_date: Feb 10
+    severity: critical
+    first_patched: 2.5.3
+  - name: Incomplete validation in boosted trees code
+    cve_id: CVE-2021-41208
+    cve_url: https://github.com/advisories/GHSA-57wx-m983-2f88
+    detected_date: Jan 18
+    severity: critical
+    first_patched: 2.4.4
+  - name: Data leak in Tensorflow
+    cve_id: CVE-2020-15205
+    cve_url: https://github.com/advisories/GHSA-g7p5-5759-qv46
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.1.2
+  - name: Denial of Service in Tensorflow
+    cve_id: CVE-2020-15206
+    cve_url: https://github.com/advisories/GHSA-w5gh-2wr2-pm6g
+    detected_date: Aug 22
+    severity: critical
+    first_patched: 2.1.2
+  - name: Out of bounds read and write in Tensorflow
+    cve_id: CVE-2022-23574
+    cve_url: https://github.com/advisories/GHSA-77gp-3h4r-6428
+    detected_date: Feb 10
+    severity: high
+    first_patched: 2.5.3
+  - name: Undefined behavior in `SparseTensorSliceDataset`
+    cve_id: CVE-2022-21736
+    cve_url: https://github.com/advisories/GHSA-pfjj-m3jj-9jc9
+    detected_date: Feb 10
+    severity: high
+    first_patched: 2.5.3
+  - name: Code injection in `saved_model_cli`
+    cve_id: CVE-2021-41228
+    cve_url: https://github.com/advisories/GHSA-3rcw-9p9x-582v
+    detected_date: Jan 18
+    severity: high
+    first_patched: 2.4.4
+  - name: TensorFlow has Floating Point Exception in TFLite in conv kernel
+    cve_id: CVE-2023-27579
+    cve_url: https://github.com/advisories/GHSA-5w96-866f-6rm8
+    detected_date: Mar 25
+    severity: high
+    first_patched: 2.11.1
+  - name: Uninitialized variable access in Tensorflow
+    cve_id: CVE-2022-23573
+    cve_url: https://github.com/advisories/GHSA-q85f-69q7-55h2
+    detected_date: Feb 10
+    severity: high
+    first_patched: 2.5.3
+  - name: NPE in TFLite
+    cve_id: CVE-2021-37681
+    cve_url: https://github.com/advisories/GHSA-7xwj-5r4v-429p
+    detected_date: Feb 10
+    severity: high
+    first_patched: 2.3.4
+  - name: Access to invalid memory during shape inference in `Cudnn*` ops
+    cve_id: CVE-2021-41221
+    cve_url: https://github.com/advisories/GHSA-cqv6-3phm-hcwx
+    detected_date: Jan 18
+    severity: high
+    first_patched: 2.4.4
+  - name: 'TensorFlow has Null Pointer Error in RandomShuffle with XLA enable '
+    cve_id: CVE-2023-25674
+    cve_url: https://github.com/advisories/GHSA-gf97-q72m-7579
+    detected_date: Mar 25
+    severity: high
+    first_patched: 2.11.1
+  - name: 'TensorFlow has Floating Point Exception in TensorListSplit with XLA '
+    cve_id: CVE-2023-25673
+    cve_url: https://github.com/advisories/GHSA-647v-r7qq-24fh
+    detected_date: Mar 25
+    severity: high
+    first_patched: 2.11.1
+  - name: TensorFlow has Null Pointer Error in LookupTableImportV2
+    cve_id: CVE-2023-25672
+    cve_url: https://github.com/advisories/GHSA-94mm-g2mv-8p7r
+    detected_date: Mar 25
+    severity: high
+    first_patched: 2.11.1
+  - name: TensorFlow vulnerable to Out-of-Bounds Read in GRUBlockCellGrad
+    cve_id: CVE-2023-25658
+    cve_url: https://github.com/advisories/GHSA-68v3-g9cm-rmm6
+    detected_date: Mar 25
+    severity: high
+    first_patched: 2.11.1
+  - name: TensorFlow has double free in Fractional(Max/Avg)Pool
+    cve_id: CVE-2023-25801
+    cve_url: https://github.com/advisories/GHSA-f49c-87jh-g47q
+    detected_date: Mar 25
+    severity: high
+    first_patched: 2.11.1
+  - name: Heap out of bounds access in sparse reduction operations
+    cve_id: CVE-2021-37635
+    cve_url: https://github.com/advisories/GHSA-cgfm-62j4-v4rf
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Null pointer dereference in `CompressElement`
+    cve_id: CVE-2021-37637
+    cve_url: https://github.com/advisories/GHSA-c9qf-r67m-p7cg
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Null pointer dereference in `RaggedTensorToTensor`
+    cve_id: CVE-2021-37638
+    cve_url: https://github.com/advisories/GHSA-hwr7-8gxx-fj5p
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Null pointer dereference and heap OOB read in operations restoring tensors
+    cve_id: CVE-2021-37639
+    cve_url: https://github.com/advisories/GHSA-gh6x-4whr-2qv4
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Heap OOB in `RaggedGather`
+    cve_id: CVE-2021-37641
+    cve_url: https://github.com/advisories/GHSA-9c8h-vvrj-w2p8
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Null pointer dereference in `MatrixDiagPartOp`
+    cve_id: CVE-2021-37643
+    cve_url: https://github.com/advisories/GHSA-fcwc-p4fc-c5cc
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Null pointer dereference in `SparseTensorSliceDataset`
+    cve_id: CVE-2021-37647
+    cve_url: https://github.com/advisories/GHSA-c5x2-p679-95wc
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Incorrect validation of `SaveV2` inputs
+    cve_id: CVE-2021-37648
+    cve_url: https://github.com/advisories/GHSA-wp77-4gmm-7cq8
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Null pointer dereference in `UncompressElement`
+    cve_id: CVE-2021-37649
+    cve_url: https://github.com/advisories/GHSA-6gv8-p3vj-pxvr
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Segfault and heap buffer overflow in `{Experimental,}DatasetToTFRecord`
+    cve_id: CVE-2021-37650
+    cve_url: https://github.com/advisories/GHSA-f8h4-7rgh-q2gm
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Heap buffer overflow in `FractionalAvgPoolGrad`
+    cve_id: CVE-2021-37651
+    cve_url: https://github.com/advisories/GHSA-hpv4-7p9c-mvfr
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Use after free in boosted trees creation
+    cve_id: CVE-2021-37652
+    cve_url: https://github.com/advisories/GHSA-m7fm-4jfh-jrg6
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Heap OOB and CHECK fail in `ResourceGather`
+    cve_id: CVE-2021-37654
+    cve_url: https://github.com/advisories/GHSA-2r8p-fg3c-wcj4
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Heap OOB in `ResourceScatterUpdate`
+    cve_id: CVE-2021-37655
+    cve_url: https://github.com/advisories/GHSA-7fvx-3jfc-2cpc
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Reference binding to nullptr in `RaggedTensorToSparse`
+    cve_id: CVE-2021-37656
+    cve_url: https://github.com/advisories/GHSA-4xfp-4pfp-89wg
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Reference binding to nullptr in `MatrixDiagV*` ops
+    cve_id: CVE-2021-37657
+    cve_url: https://github.com/advisories/GHSA-5xwc-mrhx-5g3m
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Reference binding to nullptr in `MatrixSetDiagV*` ops
+    cve_id: CVE-2021-37658
+    cve_url: https://github.com/advisories/GHSA-6p5r-g9mq-ggh2
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Reference binding to nullptr and heap OOB in binary cwise ops
+    cve_id: CVE-2021-37659
+    cve_url: https://github.com/advisories/GHSA-q3g3-h9r4-prrc
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Reference binding to nullptr in boosted trees
+    cve_id: CVE-2021-37662
+    cve_url: https://github.com/advisories/GHSA-f5cx-5wr3-5qrc
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Incomplete validation in `QuantizeV2`
+    cve_id: CVE-2021-37663
+    cve_url: https://github.com/advisories/GHSA-g25h-jr74-qp5j
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Heap OOB in boosted trees
+    cve_id: CVE-2021-37664
+    cve_url: https://github.com/advisories/GHSA-r4c4-5fpq-56wg
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Incomplete validation in MKL requantization
+    cve_id: CVE-2021-37665
+    cve_url: https://github.com/advisories/GHSA-v82p-hv3v-p6qp
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Reference binding to nullptr in `RaggedTensorToVariant`
+    cve_id: CVE-2021-37666
+    cve_url: https://github.com/advisories/GHSA-w4xf-2pqw-5mq7
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Reference binding to nullptr in unicode encoding
+    cve_id: CVE-2021-37667
+    cve_url: https://github.com/advisories/GHSA-w74j-v8xh-3w5h
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Reference binding to nullptr in map operations
+    cve_id: CVE-2021-37671
+    cve_url: https://github.com/advisories/GHSA-qr82-2c78-4m8h
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: TensorFlow vulnerable to OOB read in `Gather_nd` in TF Lite
+    cve_id: CVE-2022-35937
+    cve_url: https://github.com/advisories/GHSA-pxrw-j2fv-hx3h
+    detected_date: Sep 17
+    severity: high
+    first_patched: 2.7.2
+  - name: Reference binding to nullptr in shape inference
+    cve_id: CVE-2021-37676
+    cve_url: https://github.com/advisories/GHSA-v768-w7m9-2vmm
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: Heap OOB in nested `tf.map_fn` with `RaggedTensor`s
+    cve_id: CVE-2021-37679
+    cve_url: https://github.com/advisories/GHSA-g8wg-cjwc-xhhp
+    detected_date: Aug 26
+    severity: high
+    first_patched: 2.3.4
+  - name: TensorFlow has null dereference on ParallelConcat with XLA
+    cve_id: CVE-2023-25676
+    cve_url: https://github.com/advisories/GHSA-6wfh-89q8-44jq
+    detected_date: Mar 25
+    severity: high
+    first_patched: 2.11.1
+  - name: TensorFlow vulnerable to OOB write in `scatter_nd` in TF Lite
+    cve_id: CVE-2022-35939
+    cve_url: https://github.com/advisories/GHSA-ffjm-4qwc-7cmf
+    detected_date: Sep 17
+    severity: high
+    first_patched: 2.7.2
+  - name: 'TensorFlow has Floating Point Exception in AudioSpectrogram '
+    cve_id: CVE-2023-25666
+    cve_url: https://github.com/advisories/GHSA-f637-vh3r-vfh2
+    detected_date: Mar 25
+    severity: high
+    first_patched: 2.11.1
+  - name: TensorFlow has Null Pointer Error in SparseSparseMaximum
+    cve_id: CVE-2023-25665
+    cve_url: https://github.com/advisories/GHSA-558h-mq8x-7q9g
+    detected_date: Mar 25
+    severity: high
+    first_patched: 2.11.1
+  - name: 'TensorFlow has Heap-buffer-overflow in AvgPoolGrad '
+    cve_id: CVE-2023-25664
+    cve_url: https://github.com/advisories/GHSA-6hg6-5c2q-7rcr
+    detected_date: Mar 25
+    severity: high
+    first_patched: 2.11.1
+  - name: TensorFlow has Null Pointer Error in TensorArrayConcatV2
+    cve_id: CVE-2023-25663
+    cve_url: https://github.com/advisories/GHSA-64jg-wjww-7c5w
+    detected_date: Mar 25
+    severity: high
+    first_patched: 2.11.1
+  - name: TensorFlow vulnerable to integer overflow in EditDistance
+    cve_id: CVE-2023-25662
+    cve_url: https://github.com/advisories/GHSA-7jvm-xxmr-v5cw
+    detected_date: Mar 25
+    severity: high
+    first_patched: 2.11.1
+  - name: TensorFlow vulnerable to seg fault in `tf.raw_ops.Print`
+    cve_id: CVE-2023-25660
+    cve_url: https://github.com/advisories/GHSA-qjqc-vqcf-5qvj
+    detected_date: Mar 25
+    severity: high
+    first_patched: 2.11.1
+  - name: TensorFlow vulnerable to Out-of-Bounds Read in DynamicStitch
+    cve_id: CVE-2023-25659
+    cve_url: https://github.com/advisories/GHSA-93vr-9q9m-pj8p
+    detected_date: Mar 25
+    severity: high
+    first_patched: 2.11.1
+  - name: TensorFlow has Segfault in Bincount with XLA
+    cve_id: CVE-2023-25675
+    cve_url: https://github.com/advisories/GHSA-7x4v-9gxg-9hwj
+    detected_date: Mar 25
+    severity: high
+    first_patched: 2.11.1
+  - name: FractionalMaxPool and FractionalAVGPool heap out-of-bounds acess
+    cve_id: CVE-2022-41900
+    cve_url: https://github.com/advisories/GHSA-xvwp-h6jv-7472
+    detected_date: Nov 22
+    severity: high
+    first_patched: 2.8.4
+  - name: TensorFlow has Null Pointer Error in QuantizedMatMulWithBiasAndDequantize
+    cve_id: CVE-2023-25670
+    cve_url: https://github.com/advisories/GHSA-49rq-hwc3-x77w
+    detected_date: Mar 25
+    severity: high
+    first_patched: 2.11.1
+  - name: TensorFlow has Floating Point Exception in AvgPoolGrad with XLA
+    cve_id: CVE-2023-25669
+    cve_url: https://github.com/advisories/GHSA-rcf8-g8jv-vg6p
+    detected_date: Mar 25
+    severity: high
+    first_patched: 2.11.1
+  - name: Heap buffer overflow in Tensorflow
+    cve_id: CVE-2020-15195
+    cve_url: https://github.com/advisories/GHSA-63xm-rx5p-xvqr
+    detected_date: Aug 22
+    severity: high
+    first_patched: 2.1.2
+  - name: Denial of Service in Tensorflow
+    cve_id: CVE-2020-15203
+    cve_url: https://github.com/advisories/GHSA-xmq7-7fxm-rr79
+    detected_date: Aug 22
+    severity: high
+    first_patched: 2.1.2
+  - name: Segfault and data corruption in tensorflow-lite
+    cve_id: CVE-2020-15207
+    cve_url: https://github.com/advisories/GHSA-q4qf-3fc6-8x34
+    detected_date: Aug 22
+    severity: high
+    first_patched: 2.1.2
+  - name: Out of bounds write in grappler in Tensorflow
+    cve_id: CVE-2022-41902
+    cve_url: https://github.com/advisories/GHSA-cg88-rpvp-cjv5
+    detected_date: Nov 22
+    severity: high
+    first_patched: 2.8.4
+  - name: Data corruption in tensorflow-lite
+    cve_id: CVE-2020-15208
+    cve_url: https://github.com/advisories/GHSA-mxjj-953w-2c2v
+    detected_date: Aug 22
+    severity: high
+    first_patched: 2.1.2
+  - name: Null pointer dereference in TFLite MLIR optimizations
+    cve_id: CVE-2021-37689
+    cve_url: https://github.com/advisories/GHSA-wf5p-c75w-w3wh
+    detected_date: Feb 10
+    severity: high
+    first_patched: 2.3.4
+  - name: Interpreter crash from `tf.io.decode_raw`
+    cve_id: CVE-2021-29614
+    cve_url: https://github.com/advisories/GHSA-8pmx-p244-g88h
+    detected_date: Aug 22
+    severity: high
+    first_patched: 2.1.4
+  - name: Heap OOB read in TFLite
+    cve_id: CVE-2021-29606
+    cve_url: https://github.com/advisories/GHSA-h4pc-gx2w-f2xv
+    detected_date: Aug 22
+    severity: high
+    first_patched: 2.1.4
+  - name: Integer overflow in TFLite memory allocation
+    cve_id: CVE-2021-29605
+    cve_url: https://github.com/advisories/GHSA-jf7h-7m85-w2v2
+    detected_date: Aug 22
+    severity: high
+    first_patched: 2.1.4
+  - name: Stack overflow due to looping TFLite subgraph
+    cve_id: CVE-2021-29591
+    cve_url: https://github.com/advisories/GHSA-cwv3-863g-39vx
+    detected_date: Aug 22
+    severity: high
+    first_patched: 2.1.4
+  - name: Integer overflow in TensorFlow
+    cve_id: CVE-2022-23587
+    cve_url: https://github.com/advisories/GHSA-8jj7-5vxc-pg2q
+    detected_date: Feb 10
+    severity: high
+    first_patched: 2.5.3
+  - name: Out of bounds read in Tensorflow
+    cve_id: CVE-2022-21728
+    cve_url: https://github.com/advisories/GHSA-6gmv-pjp9-p8w8
+    detected_date: Feb 10
+    severity: high
+    first_patched: 2.5.3
+  - name: Out of bounds read in Tensorflow
+    cve_id: CVE-2022-21730
+    cve_url: https://github.com/advisories/GHSA-vjg4-v33c-ggc4
+    detected_date: Feb 10
+    severity: high
+    first_patched: 2.5.3
+  - name: Heap OOB read in `tf.raw_ops.SparseCountSparseOutput`
+    cve_id: CVE-2021-41210
+    cve_url: https://github.com/advisories/GHSA-m342-ff57-4jcc
+    detected_date: Jan 18
+    severity: high
+    first_patched: 2.4.4
+  - name: Integer overflow in Tensorflow
+    cve_id: CVE-2022-21727
+    cve_url: https://github.com/advisories/GHSA-c6fh-56w7-fvjw
+    detected_date: Feb 10
+    severity: high
+    first_patched: 2.5.3
+  - name: Out of bounds read in Tensorflow
+    cve_id: CVE-2022-21726
+    cve_url: https://github.com/advisories/GHSA-23hm-7w47-xw72
+    detected_date: Feb 10
+    severity: high
+    first_patched: 2.5.3
+  - name: Heap OOB in `FusedBatchNorm` kernels
+    cve_id: CVE-2021-41223
+    cve_url: https://github.com/advisories/GHSA-f54p-f6jp-4rhr
+    detected_date: Jan 18
+    severity: high
+    first_patched: 2.4.4
+  - name: 'TensorFlow has segmentation fault in tfg-translate '
+    cve_id: CVE-2023-25671
+    cve_url: https://github.com/advisories/GHSA-j5w9-hmfh-4cr6
+    detected_date: Mar 25
+    severity: high
+    first_patched: 2.11.1
+  - name: "`SparseFillEmptyRows` heap OOB"
+    cve_id: CVE-2021-41224
+    cve_url: https://github.com/advisories/GHSA-rg3m-hqc5-344v
+    detected_date: Jan 18
+    severity: high
+    first_patched: 2.4.4
+  - name: Heap OOB in `SparseBinCount`
+    cve_id: CVE-2021-41226
+    cve_url: https://github.com/advisories/GHSA-374m-jm66-3vj8
+    detected_date: Jan 18
+    severity: high
+    first_patched: 2.4.4
+  - name: Stack overflow in TensorFlow
+    cve_id: CVE-2022-23591
+    cve_url: https://github.com/advisories/GHSA-247x-2f9f-5wp7
+    detected_date: Feb 10
+    severity: high
+    first_patched: 2.5.3
+  - name: Heap OOB read in `tf.ragged.cross`
+    cve_id: CVE-2021-41212
+    cve_url: https://github.com/advisories/GHSA-fr77-rrx3-cp7g
+    detected_date: Jan 18
+    severity: high
+    first_patched: 2.4.4
+  - name: Improper Validation of Integrity Check Value in TensorFlow
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-43q8-3fv7-pr5x
+    detected_date: Feb 10
+    severity: high
+    first_patched: 2.5.3
+  - name: Buffer overflow in `CONV_3D_TRANSPOSE` on TFLite
+    cve_id: CVE-2022-41894
+    cve_url: https://github.com/advisories/GHSA-h6q3-vv32-2cq5
+    detected_date: Apr 11
+    severity: high
+    first_patched: 2.8.4
+  - name: Heap OOB read in all `tf.raw_ops.QuantizeAndDequantizeV*` ops
+    cve_id: CVE-2021-41205
+    cve_url: https://github.com/advisories/GHSA-49rx-x2rw-pc6f
+    detected_date: Jan 18
+    severity: high
+    first_patched: 2.4.4
+  - name: Reference binding to `nullptr` in `tf.ragged.cross`
+    cve_id: CVE-2021-41214
+    cve_url: https://github.com/advisories/GHSA-vwhq-49r4-gj9v
+    detected_date: Jan 18
+    severity: high
+    first_patched: 2.4.4
+  - name: Incomplete validation of shapes in multiple TF ops
+    cve_id: CVE-2021-41206
+    cve_url: https://github.com/advisories/GHSA-pgcq-h79j-2f69
+    detected_date: Jan 18
+    severity: high
+    first_patched: 2.4.4
+  - name: Out of bounds write in Tensorflow
+    cve_id: CVE-2022-23566
+    cve_url: https://github.com/advisories/GHSA-5qw5-89mw-wcg2
+    detected_date: Feb 10
+    severity: high
+    first_patched: 2.5.3
+  - name: Missing validation during checkpoint loading
+    cve_id: CVE-2021-41203
+    cve_url: https://github.com/advisories/GHSA-7pxj-m4jf-r6h2
+    detected_date: Jan 18
+    severity: high
+    first_patched: 2.4.4
+  - name: Insecure temporary file in Tensorflow
+    cve_id: CVE-2022-23563
+    cve_url: https://github.com/advisories/GHSA-wc4g-r73w-x8mm
+    detected_date: Feb 10
+    severity: high
+    first_patched: 2.5.3
+  - name: Integer overflow in Tensorflow
+    cve_id: CVE-2022-23562
+    cve_url: https://github.com/advisories/GHSA-qx3f-p745-w4hr
+    detected_date: Feb 10
+    severity: high
+    first_patched: 2.5.3
+  - name: Out of bounds write in TFLite
+    cve_id: CVE-2022-23561
+    cve_url: https://github.com/advisories/GHSA-9c78-vcq7-7vxq
+    detected_date: Feb 10
+    severity: high
+    first_patched: 2.5.3
+  - name: Read and Write outside of bounds in TensorFlow
+    cve_id: CVE-2022-23560
+    cve_url: https://github.com/advisories/GHSA-4hvf-hxvg-f67v
+    detected_date: Feb 10
+    severity: high
+    first_patched: 2.5.3
+  - name: Integer overflow in TFLite array creation
+    cve_id: CVE-2022-23558
+    cve_url: https://github.com/advisories/GHSA-9gwq-6cwj-47h3
+    detected_date: Feb 10
+    severity: high
+    first_patched: 2.5.3
+  - name: Integer overflow in TFLite
+    cve_id: CVE-2022-23559
+    cve_url: https://github.com/advisories/GHSA-98p5-x8x4-c9m5
+    detected_date: Feb 10
+    severity: high
+    first_patched: 2.5.3
+  - name: Code injection in `saved_model_cli` in TensorFlow
+    cve_id: CVE-2022-29216
+    cve_url: https://github.com/advisories/GHSA-75c9-jrh4-79mc
+    detected_date: May 25
+    severity: high
+    first_patched: 2.6.4
+  - name: Unitialized access in `EinsumHelper::ParseEquation`
+    cve_id: CVE-2021-41201
+    cve_url: https://github.com/advisories/GHSA-j86v-p27c-73fm
+    detected_date: Jan 18
+    severity: high
+    first_patched: 2.4.4
+  - name: Null pointer dereference in TFLite
+    cve_id: CVE-2021-37688
+    cve_url: https://github.com/advisories/GHSA-vcjj-9vg7-vf68
+    detected_date: Feb 10
+    severity: high
+    first_patched: 2.3.4
+  - name: Undefined behavior via `nullptr` reference binding in sparse matrix multiplication
+    cve_id: CVE-2021-41219
+    cve_url: https://github.com/advisories/GHSA-4f99-p9c2-3j8x
+    detected_date: Jan 18
+    severity: high
+    first_patched: 2.4.4
+  - name: Segfault and OOB write due to incomplete validation in `EditDistance` in
+      TensorFlow
+    cve_id: CVE-2022-29208
+    cve_url: https://github.com/advisories/GHSA-2r2f-g8mw-9gvr
+    detected_date: May 25
+    severity: high
+    first_patched: 2.6.4
+  - name: Heap overflow in Tensorflow
+    cve_id: CVE-2022-21740
+    cve_url: https://github.com/advisories/GHSA-44qp-9wwf-734r
+    detected_date: Feb 10
+    severity: high
+    first_patched: 2.5.3
+  - name: Use after free in `DecodePng` kernel
+    cve_id: CVE-2022-23584
+    cve_url: https://github.com/advisories/GHSA-24x4-6qmh-88qg
+    detected_date: Feb 10
+    severity: high
+    first_patched: 2.5.3
+  - name: Missing validation causes denial of service via `LoadAndRemapMatrix`
+    cve_id: CVE-2022-29199
+    cve_url: https://github.com/advisories/GHSA-p9rc-rmr5-529j
+    detected_date: May 25
+    severity: moderate
+    first_patched: 2.6.4
+  - name: Crash in `max_pool3d` when size argument is 0 or negative
+    cve_id: CVE-2021-41196
+    cve_url: https://github.com/advisories/GHSA-m539-j985-hcr8
+    detected_date: Jan 18
+    severity: moderate
+    first_patched: 2.4.4
+  - name: Crashes due to overflow and `CHECK`-fail in ops with large tensor shapes
+    cve_id: CVE-2021-41197
+    cve_url: https://github.com/advisories/GHSA-prcg-wp5q-rv7p
+    detected_date: Jan 18
+    severity: moderate
+    first_patched: 2.4.4
+  - name: Overflow/crash in `tf.tile` when tiling tensor is large
+    cve_id: CVE-2021-41198
+    cve_url: https://github.com/advisories/GHSA-2p25-55c9-h58q
+    detected_date: Jan 18
+    severity: moderate
+    first_patched: 2.4.4
+  - name: Overflow/crash in `tf.image.resize` when size is large
+    cve_id: CVE-2021-41199
+    cve_url: https://github.com/advisories/GHSA-5hx2-qx8j-qjqm
+    detected_date: Jan 18
+    severity: moderate
+    first_patched: 2.4.4
+  - name: Incomplete validation in `tf.summary.create_file_writer`
+    cve_id: CVE-2021-41200
+    cve_url: https://github.com/advisories/GHSA-gh8h-7j2j-qv4f
+    detected_date: Jan 18
+    severity: moderate
+    first_patched: 2.4.4
+  - name: Overflow/crash in `tf.range`
+    cve_id: CVE-2021-41202
+    cve_url: https://github.com/advisories/GHSA-xrqm-fpgr-6hhx
+    detected_date: Jan 18
+    severity: moderate
+    first_patched: 2.4.4
+  - name: Segfault while copying constant resource tensor
+    cve_id: CVE-2021-41204
+    cve_url: https://github.com/advisories/GHSA-786j-5qwq-r36x
+    detected_date: Jan 18
+    severity: moderate
+    first_patched: 2.4.4
+  - name: FPE in `ParallelConcat`
+    cve_id: CVE-2021-41207
+    cve_url: https://github.com/advisories/GHSA-7v94-64hj-m82h
+    detected_date: Jan 18
+    severity: moderate
+    first_patched: 2.4.4
+  - name: FPE in convolutions with zero size filters
+    cve_id: CVE-2021-41209
+    cve_url: https://github.com/advisories/GHSA-6hpv-v2rx-c5g6
+    detected_date: Jan 18
+    severity: moderate
+    first_patched: 2.4.4
+  - name: Deadlock in mutually recursive `tf.function` objects
+    cve_id: CVE-2021-41213
+    cve_url: https://github.com/advisories/GHSA-h67m-xg8f-fxcf
+    detected_date: Jan 18
+    severity: moderate
+    first_patched: 2.4.4
+  - name: Null pointer exception in `DeserializeSparse`
+    cve_id: CVE-2021-41215
+    cve_url: https://github.com/advisories/GHSA-x3v8-c8qx-3j3r
+    detected_date: Jan 18
+    severity: moderate
+    first_patched: 2.4.4
+  - name: Heap buffer overflow in `Transpose`
+    cve_id: CVE-2021-41216
+    cve_url: https://github.com/advisories/GHSA-3ff2-r28g-w7h9
+    detected_date: Jan 18
+    severity: moderate
+    first_patched: 2.4.4
+  - name: Null pointer exception when `Exit` node is not preceded by `Enter` op
+    cve_id: CVE-2021-41217
+    cve_url: https://github.com/advisories/GHSA-5crj-c72x-m7gq
+    detected_date: Jan 18
+    severity: moderate
+    first_patched: 2.4.4
+  - name: Integer division by 0 in `tf.raw_ops.AllToAll`
+    cve_id: CVE-2021-41218
+    cve_url: https://github.com/advisories/GHSA-9crf-c6qr-r273
+    detected_date: Jan 18
+    severity: moderate
+    first_patched: 2.4.4
+  - name: Segfault due to negative splits in `SplitV`
+    cve_id: CVE-2021-41222
+    cve_url: https://github.com/advisories/GHSA-cpf4-wx82-gxp6
+    detected_date: Jan 18
+    severity: moderate
+    first_patched: 2.4.4
+  - name: A use of uninitialized value vulnerability in Tensorflow
+    cve_id: CVE-2021-41225
+    cve_url: https://github.com/advisories/GHSA-7r94-xv9v-63jw
+    detected_date: Jan 18
+    severity: moderate
+    first_patched: 2.4.4
+  - name: Arbitrary memory read in `ImmutableConst`
+    cve_id: CVE-2021-41227
+    cve_url: https://github.com/advisories/GHSA-j8c8-67vp-6mx7
+    detected_date: Jan 18
+    severity: moderate
+    first_patched: 2.4.4
+  - name: Null-dereference in Tensorflow
+    cve_id: CVE-2022-23577
+    cve_url: https://github.com/advisories/GHSA-8cxv-76p7-jxwr
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Integer overflow in Tensorflow
+    cve_id: CVE-2022-23576
+    cve_url: https://github.com/advisories/GHSA-wm93-f238-7v37
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Integer overflow in Tensorflow
+    cve_id: CVE-2022-23575
+    cve_url: https://github.com/advisories/GHSA-c94w-c95p-phf8
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Memory leak in Tensorflow
+    cve_id: CVE-2022-23578
+    cve_url: https://github.com/advisories/GHSA-8r7c-3cm2-3h8f
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: "`CHECK`-failures during Grappler's `SafeToRemoveIdentity` in Tensorflow"
+    cve_id: CVE-2022-23579
+    cve_url: https://github.com/advisories/GHSA-5f2r-qp73-37mr
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: "`CHECK`-failures in `TensorByteSize` in Tensorflow"
+    cve_id: CVE-2022-23582
+    cve_url: https://github.com/advisories/GHSA-4j82-5ccr-4r8v
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: "`CHECK`-failures in binary ops in Tensorflow"
+    cve_id: CVE-2022-23583
+    cve_url: https://github.com/advisories/GHSA-gjqc-q9g6-q2j3
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Memory leak in decoding PNG images
+    cve_id: CVE-2022-23585
+    cve_url: https://github.com/advisories/GHSA-fq6p-6334-8gr4
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Multiple `CHECK`-fails in `function.cc` in TensowFlow
+    cve_id: CVE-2022-23586
+    cve_url: https://github.com/advisories/GHSA-43jf-985q-588j
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: "`CHECK`-fails due to attempting to build a reference tensor"
+    cve_id: CVE-2022-23588
+    cve_url: https://github.com/advisories/GHSA-fx5c-h9f6-rv7c
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Crash when type cannot be specialized in Tensorflow
+    cve_id: CVE-2022-23572
+    cve_url: https://github.com/advisories/GHSA-rww7-2gpw-fv6j
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Reachable Assertion in Tensorflow
+    cve_id: CVE-2022-23571
+    cve_url: https://github.com/advisories/GHSA-j3mj-fhpq-qqjj
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Null pointer dereference in Grappler's `IsConstant`
+    cve_id: CVE-2022-23589
+    cve_url: https://github.com/advisories/GHSA-9px9-73fg-3fqp
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Crash due to erroneous `StatusOr` in TensorFlow
+    cve_id: CVE-2022-23590
+    cve_url: https://github.com/advisories/GHSA-pqrv-8r2f-7278
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.7.1
+  - name: 'Null pointer dereference in TensorFlow '
+    cve_id: CVE-2022-23595
+    cve_url: https://github.com/advisories/GHSA-fpcp-9h7m-ffpx
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Null-dereference in Tensorflow
+    cve_id: CVE-2022-23570
+    cve_url: https://github.com/advisories/GHSA-9p77-mmrw-69c7
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Integer Overflow or Wraparound in TensorFlow
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-wcv5-vrvr-3rx2
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: "`CHECK`-fails when building invalid tensor shapes in Tensorflow"
+    cve_id: CVE-2022-23569
+    cve_url: https://github.com/advisories/GHSA-qj5r-f9mv-rffh
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Integer overflows in Tensorflow
+    cve_id: CVE-2022-23568
+    cve_url: https://github.com/advisories/GHSA-6445-fm66-fvq2
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Integer overflows in Tensorflow
+    cve_id: CVE-2022-23567
+    cve_url: https://github.com/advisories/GHSA-rrx2-r989-2c43
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Reachable Assertion in Tensorflow
+    cve_id: CVE-2022-23564
+    cve_url: https://github.com/advisories/GHSA-8rcj-c8pj-v3m3
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: "`CHECK`-failures in Tensorflow"
+    cve_id: CVE-2022-23565
+    cve_url: https://github.com/advisories/GHSA-4v5p-v5h9-6xjx
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Division by zero in TFLite
+    cve_id: CVE-2022-23557
+    cve_url: https://github.com/advisories/GHSA-gf2j-f278-xh4v
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Division by zero in TFLite
+    cve_id: CVE-2022-21741
+    cve_url: https://github.com/advisories/GHSA-428x-9xc2-m8mj
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Null pointer dereference in TensorFlow
+    cve_id: CVE-2022-21739
+    cve_url: https://github.com/advisories/GHSA-3mw4-6rj6-74g5
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Assertion failure based denial of service in Tensorflow
+    cve_id: CVE-2022-21737
+    cve_url: https://github.com/advisories/GHSA-f2vv-v9cg-qhh7
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Integer overflow leading to crash in Tensorflow
+    cve_id: CVE-2022-21738
+    cve_url: https://github.com/advisories/GHSA-x4qx-4fjv-hmw6
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Division by zero in Tensorflow
+    cve_id: CVE-2022-21735
+    cve_url: https://github.com/advisories/GHSA-87v6-crgm-2gfj
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: "`CHECK`-failures in Tensorflow"
+    cve_id: CVE-2022-21734
+    cve_url: https://github.com/advisories/GHSA-gcvh-66ff-4mwm
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Memory exhaustion in Tensorflow
+    cve_id: CVE-2022-21733
+    cve_url: https://github.com/advisories/GHSA-98j8-c9q4-r38g
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Memory exhaustion in Tensorflow
+    cve_id: CVE-2022-21732
+    cve_url: https://github.com/advisories/GHSA-c582-c96p-r5cq
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Type confusion leading to segfault in Tensorflow
+    cve_id: CVE-2022-21731
+    cve_url: https://github.com/advisories/GHSA-m4hf-j54p-p353
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Overflow and uncaught divide by zero in Tensorflow
+    cve_id: CVE-2022-21729
+    cve_url: https://github.com/advisories/GHSA-34f9-hjfq-rr8j
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: Division by zero in Tensorflow
+    cve_id: CVE-2022-21725
+    cve_url: https://github.com/advisories/GHSA-v3f7-j968-4h5f
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: TensorFlow vulnerable to `CHECK` fail in `ParameterizedTruncatedNormal`
+    cve_id: CVE-2022-35984
+    cve_url: https://github.com/advisories/GHSA-p2xf-8hgm-hpw5
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: " TensorFlow vulnerable to `CHECK` fail in `FakeQuantWithMinMaxVarsPerChannelGradient`"
+    cve_id: CVE-2022-35990
+    cve_url: https://github.com/advisories/GHSA-h7ff-cfc9-wmmh
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: Incomplete validation in signal ops leads to crashes in TensorFlow
+    cve_id: CVE-2022-29213
+    cve_url: https://github.com/advisories/GHSA-5889-7v45-q28m
+    detected_date: May 25
+    severity: moderate
+    first_patched: 2.6.4
+  - name: Undefined behavior when users supply invalid resource handles
+    cve_id: CVE-2022-29207
+    cve_url: https://github.com/advisories/GHSA-5wpj-c6f7-24x8
+    detected_date: May 25
+    severity: moderate
+    first_patched: 2.6.4
+  - name: Missing validation results in undefined behavior in `SparseTensorDenseAdd
+    cve_id: CVE-2022-29206
+    cve_url: https://github.com/advisories/GHSA-rc9w-5c64-9vqq
+    detected_date: May 25
+    severity: moderate
+    first_patched: 2.6.4
+  - name: Segfault due to missing support for quantized types
+    cve_id: CVE-2022-29205
+    cve_url: https://github.com/advisories/GHSA-54ch-gjq5-4976
+    detected_date: May 25
+    severity: moderate
+    first_patched: 2.6.4
+  - name: Missing validation causes denial of service via `Conv3DBackpropFilterV2`
+    cve_id: CVE-2022-29204
+    cve_url: https://github.com/advisories/GHSA-hx9q-2mx4-m4pg
+    detected_date: May 25
+    severity: moderate
+    first_patched: 2.6.4
+  - name: Integer overflow in `SpaceToBatchND`
+    cve_id: CVE-2022-29203
+    cve_url: https://github.com/advisories/GHSA-jjm6-4vf7-cjh4
+    detected_date: May 25
+    severity: moderate
+    first_patched: 2.6.4
+  - name: Denial of service in `tf.ragged.constant` due to lack of validation
+    cve_id: CVE-2022-29202
+    cve_url: https://github.com/advisories/GHSA-cwpm-f78v-7m5c
+    detected_date: May 25
+    severity: moderate
+    first_patched: 2.6.4
+  - name: Missing validation results in undefined behavior in `QuantizedConv2D`
+    cve_id: CVE-2022-29201
+    cve_url: https://github.com/advisories/GHSA-pqhm-4wvf-2jg8
+    detected_date: May 25
+    severity: moderate
+    first_patched: 2.6.4
+  - name: Missing validation causes denial of service via `LSTMBlockCell`
+    cve_id: CVE-2022-29200
+    cve_url: https://github.com/advisories/GHSA-2vv3-56qg-g2cf
+    detected_date: May 25
+    severity: moderate
+    first_patched: 2.6.4
+  - name: Crash in `tf.math.segment_*` operations
+    cve_id: CVE-2021-41195
+    cve_url: https://github.com/advisories/GHSA-cq76-mxrc-vchh
+    detected_date: Jan 18
+    severity: moderate
+    first_patched: 2.4.4
+  - name: Missing validation causes denial of service via `SparseTensorToCSRSparseMatrix`
+    cve_id: CVE-2022-29198
+    cve_url: https://github.com/advisories/GHSA-mg66-qvc5-rm93
+    detected_date: May 25
+    severity: moderate
+    first_patched: 2.6.4
+  - name: Missing validation causes denial of service via `UnsortedSegmentJoin`
+    cve_id: CVE-2022-29197
+    cve_url: https://github.com/advisories/GHSA-hrg5-737c-2p56
+    detected_date: May 25
+    severity: moderate
+    first_patched: 2.6.4
+  - name: Missing validation causes denial of service via `Conv3DBackpropFilterV2`
+    cve_id: CVE-2022-29196
+    cve_url: https://github.com/advisories/GHSA-5v77-j66x-4c4g
+    detected_date: May 25
+    severity: moderate
+    first_patched: 2.6.4
+  - name: Missing validation causes denial of service via `StagePeek`
+    cve_id: CVE-2022-29195
+    cve_url: https://github.com/advisories/GHSA-h48f-q7rw-hvr7
+    detected_date: May 25
+    severity: moderate
+    first_patched: 2.6.4
+  - name: Missing validation causes denial of service via `DeleteSessionTensor`
+    cve_id: CVE-2022-29194
+    cve_url: https://github.com/advisories/GHSA-h5g4-ppwx-48q2
+    detected_date: May 25
+    severity: moderate
+    first_patched: 2.6.4
+  - name: Missing validation crashes `QuantizeAndDequantizeV4Grad`
+    cve_id: CVE-2022-29192
+    cve_url: https://github.com/advisories/GHSA-h2wq-prv9-2f56
+    detected_date: May 25
+    severity: moderate
+    first_patched: 2.6.4
+  - name: Missing validation causes denial of service via `GetSessionTensor`
+    cve_id: CVE-2022-29191
+    cve_url: https://github.com/advisories/GHSA-fv25-wrff-wf86
+    detected_date: May 25
+    severity: moderate
+    first_patched: 2.6.4
+  - name: Missing validation causes `TensorSummaryV2` to crash
+    cve_id: CVE-2022-29193
+    cve_url: https://github.com/advisories/GHSA-2p9q-h29j-3f5v
+    detected_date: May 25
+    severity: moderate
+    first_patched: 2.6.4
+  - name: "`CHECK` failure in depthwise ops via overflows"
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-mw6j-hh29-h379
+    detected_date: May 26
+    severity: moderate
+    first_patched: 2.6.4
+  - name: Core dump when loading TFLite models with quantization in TensorFlow
+    cve_id: CVE-2022-29212
+    cve_url: https://github.com/advisories/GHSA-8wwm-6264-x792
+    detected_date: May 25
+    severity: moderate
+    first_patched: 2.6.4
+  - name: Segfault if `tf.histogram_fixed_width` is called with NaN values in TensorFlow
+    cve_id: CVE-2022-29211
+    cve_url: https://github.com/advisories/GHSA-xrp2-fhq4-4q3w
+    detected_date: May 25
+    severity: moderate
+    first_patched: 2.6.4
+  - name: Type confusion leading to `CHECK`-failure based denial of service in TensorFlow
+    cve_id: CVE-2022-29209
+    cve_url: https://github.com/advisories/GHSA-f4rr-5m7v-wxcw
+    detected_date: May 25
+    severity: moderate
+    first_patched: 2.6.4
+  - name: TensorFlow vulnerable to `CHECK` fail in `RandomPoissonV2`
+    cve_id: CVE-2022-36003
+    cve_url: https://github.com/advisories/GHSA-cv2p-32v3-vhwq
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` fail in `FakeQuantWithMinMaxVarsGradient`
+    cve_id: CVE-2022-36005
+    cve_url: https://github.com/advisories/GHSA-r26c-679w-mrjm
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` fail in `AudioSummaryV2`
+    cve_id: CVE-2022-35995
+    cve_url: https://github.com/advisories/GHSA-g9h5-vr8m-x2h4
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` fail in `tf.random.gamma`
+    cve_id: CVE-2022-36004
+    cve_url: https://github.com/advisories/GHSA-mv8m-8x97-937q
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: Incomplete validation in `SparseSparseMinimum`
+    cve_id: CVE-2021-29607
+    cve_url: https://github.com/advisories/GHSA-gv26-jpj9-c8gq
+    detected_date: Mar 22
+    severity: moderate
+    first_patched: 2.1.4
+  - name: TensorFlow vulnerable to `CHECK` failure in `AvgPoolOp`
+    cve_id: CVE-2022-35941
+    cve_url: https://github.com/advisories/GHSA-mgmh-g2v6-mqw5
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` fail in `QuantizeAndDequantizeV3`
+    cve_id: CVE-2022-36026
+    cve_url: https://github.com/advisories/GHSA-9cr2-8pwr-fhfq
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: FPE in TFLite division operations
+    cve_id: CVE-2021-37683
+    cve_url: https://github.com/advisories/GHSA-rhrq-64mq-hf9h
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.3.4
+  - name: Memory corruption in `DrawBoundingBoxesV2`
+    cve_id: CVE-2021-29571
+    cve_url: https://github.com/advisories/GHSA-whr9-vfh2-7hm6
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 2.1.4
+  - name: Out of bounds access in tensorflow-lite
+    cve_id: CVE-2020-15211
+    cve_url: https://github.com/advisories/GHSA-cvpc-8phh-8f45
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 2.1.2
+  - name: Null pointer dereference in tensorflow-lite
+    cve_id: CVE-2020-15209
+    cve_url: https://github.com/advisories/GHSA-qh32-6jjc-qprm
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 2.1.2
+  - name: Segfault in Tensorflow
+    cve_id: CVE-2020-15204
+    cve_url: https://github.com/advisories/GHSA-q8gv-q7wr-9jf8
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 2.1.2
+  - name: Denial of Service in Tensorflow
+    cve_id: CVE-2020-15194
+    cve_url: https://github.com/advisories/GHSA-9mqp-7v2h-2382
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 2.1.2
+  - name: Segfault in Tensorflow
+    cve_id: CVE-2020-15190
+    cve_url: https://github.com/advisories/GHSA-4g9f-63rx-5cw4
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 2.1.2
+  - name: TensorFlow vulnerable to null dereference on MLIR on empty function attributes
+    cve_id: CVE-2022-36011
+    cve_url: https://github.com/advisories/GHSA-fv43-93gv-vm8f
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to null-dereference in `mlir::tfg::GraphDefImporter::ConvertNodeDef`
+    cve_id: CVE-2022-36013
+    cve_url: https://github.com/advisories/GHSA-828c-5j5q-vrjq
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: Use of unitialized value in TFLite
+    cve_id: CVE-2021-37682
+    cve_url: https://github.com/advisories/GHSA-4c4g-crqm-xrxw
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.3.4
+  - name: Tensorflow vulnerable to Out-of-Bounds Read
+    cve_id: CVE-2022-41880
+    cve_url: https://github.com/advisories/GHSA-8w5g-3wcv-9g2j
+    detected_date: Nov 22
+    severity: moderate
+    first_patched: 2.8.4
+  - name: Invalid char to bool conversion when printing a tensor
+    cve_id: CVE-2022-41911
+    cve_url: https://github.com/advisories/GHSA-pf36-r9c6-h97j
+    detected_date: Nov 22
+    severity: moderate
+    first_patched: 2.8.4
+  - name: Heap overflow in `QuantizeAndDequantizeV2`
+    cve_id: CVE-2022-41910
+    cve_url: https://github.com/advisories/GHSA-frqp-wp83-qggv
+    detected_date: Nov 22
+    severity: moderate
+    first_patched: 2.8.4
+  - name: Segfault in `CompositeTensorVariantToComponents`
+    cve_id: CVE-2022-41909
+    cve_url: https://github.com/advisories/GHSA-rjx6-v474-2ch9
+    detected_date: Nov 22
+    severity: moderate
+    first_patched: 2.8.4
+  - name: "`CHECK` fail via inputs in `PyFunc`"
+    cve_id: CVE-2022-41908
+    cve_url: https://github.com/advisories/GHSA-mv77-9g28-cwg3
+    detected_date: Nov 22
+    severity: moderate
+    first_patched: 2.8.4
+  - name: Overflow in `ResizeNearestNeighborGrad`
+    cve_id: CVE-2022-41907
+    cve_url: https://github.com/advisories/GHSA-368v-7v32-52fx
+    detected_date: Nov 22
+    severity: moderate
+    first_patched: 2.8.4
+  - name: "`CHECK_EQ` fail via input in `SparseMatrixNNZ`"
+    cve_id: CVE-2022-41901
+    cve_url: https://github.com/advisories/GHSA-g9fm-r5mm-rf9f
+    detected_date: Nov 22
+    severity: moderate
+    first_patched: 2.8.4
+  - name: "`CHECK` fail via inputs in `SdcaOptimizer`"
+    cve_id: CVE-2022-41899
+    cve_url: https://github.com/advisories/GHSA-27rc-728f-x5w2
+    detected_date: Nov 22
+    severity: moderate
+    first_patched: 2.8.4
+  - name: "`CHECK` fail via inputs in `SparseFillEmptyRowsGrad`"
+    cve_id: CVE-2022-41898
+    cve_url: https://github.com/advisories/GHSA-hq7g-wwwp-q46h
+    detected_date: Nov 22
+    severity: moderate
+    first_patched: 2.8.4
+  - name: "`FractionalMaxPoolGrad` Heap out of bounds read"
+    cve_id: CVE-2022-41897
+    cve_url: https://github.com/advisories/GHSA-f2w8-jw48-fr7j
+    detected_date: Nov 22
+    severity: moderate
+    first_patched: 2.8.4
+  - name: "`tf.raw_ops.Mfcc` crashes"
+    cve_id: CVE-2022-41896
+    cve_url: https://github.com/advisories/GHSA-rmg2-f698-wq35
+    detected_date: Nov 22
+    severity: moderate
+    first_patched: 2.8.4
+  - name: "`MirrorPadGrad` heap out of bounds read"
+    cve_id: CVE-2022-41895
+    cve_url: https://github.com/advisories/GHSA-gq2j-cr96-gvqx
+    detected_date: Nov 22
+    severity: moderate
+    first_patched: 2.8.4
+  - name: "`CHECK_EQ` fail in `tf.raw_ops.TensorListResize`"
+    cve_id: CVE-2022-41893
+    cve_url: https://github.com/advisories/GHSA-67pf-62xr-q35m
+    detected_date: Nov 22
+    severity: moderate
+    first_patched: 2.8.4
+  - name: Segfault in `tf.raw_ops.TensorListConcat`
+    cve_id: CVE-2022-41891
+    cve_url: https://github.com/advisories/GHSA-66vq-54fq-6jvv
+    detected_date: Nov 22
+    severity: moderate
+    first_patched: 2.8.4
+  - name: "`CHECK` fail in `BCast` overflow"
+    cve_id: CVE-2022-41890
+    cve_url: https://github.com/advisories/GHSA-h246-cgh4-7475
+    detected_date: Nov 22
+    severity: moderate
+    first_patched: 2.8.4
+  - name: Segfault via invalid attributes in `pywrap_tfe_src.cc`
+    cve_id: CVE-2022-41889
+    cve_url: https://github.com/advisories/GHSA-xxcj-rhqg-m46g
+    detected_date: Nov 22
+    severity: moderate
+    first_patched: 2.8.4
+  - name: FPE in `tf.image.generate_bounding_box_proposals`
+    cve_id: CVE-2022-41888
+    cve_url: https://github.com/advisories/GHSA-6x99-gv2v-q76v
+    detected_date: Nov 22
+    severity: moderate
+    first_patched: 2.8.4
+  - name: TensorFlow vulnerable to null-dereference in `mlir::tfg::TFOp::nameAttr`
+    cve_id: CVE-2022-36014
+    cve_url: https://github.com/advisories/GHSA-7j3m-8g3c-9qqq
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: Overflow in `tf.keras.losses.poisson`
+    cve_id: CVE-2022-41887
+    cve_url: https://github.com/advisories/GHSA-8fvv-46hw-vpg3
+    detected_date: Nov 22
+    severity: moderate
+    first_patched: 2.9.3
+  - name: Overflow in `ImageProjectiveTransformV2`
+    cve_id: CVE-2022-41886
+    cve_url: https://github.com/advisories/GHSA-54pp-c6pp-7fpx
+    detected_date: Nov 22
+    severity: moderate
+    first_patched: 2.8.4
+  - name: Overflow in `FusedResizeAndPadConv2D`
+    cve_id: CVE-2022-41885
+    cve_url: https://github.com/advisories/GHSA-762h-vpvw-3rcx
+    detected_date: Nov 22
+    severity: moderate
+    first_patched: 2.7.4
+  - name: Seg fault in `ndarray_tensor_bridge` due to zero and large inputs
+    cve_id: CVE-2022-41884
+    cve_url: https://github.com/advisories/GHSA-jq6x-99hj-q636
+    detected_date: Nov 22
+    severity: moderate
+    first_patched: 2.8.4
+  - name: TensorFlow vulnerable to `CHECK` fail in `DenseBincount`
+    cve_id: CVE-2022-35987
+    cve_url: https://github.com/advisories/GHSA-w62h-8xjm-fv49
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` fail in `RaggedTensorToVariant`
+    cve_id: CVE-2022-36018
+    cve_url: https://github.com/advisories/GHSA-m6cv-4fmf-66xf
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` fail in `FakeQuantWithMinMaxVarsPerChannel`
+    cve_id: CVE-2022-36019
+    cve_url: https://github.com/advisories/GHSA-9j4v-pp28-mxv7
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to segfault when opening multiframe gif
+    cve_id: CVE-2023-25667
+    cve_url: https://github.com/advisories/GHSA-fqm2-gh8w-gr68
+    detected_date: Mar 25
+    severity: moderate
+    first_patched: 2.11.1
+  - name: " TensorFlow segfault TFLite converter on per-channel quantized transposed
+      convolutions"
+    cve_id: CVE-2022-36027
+    cve_url: https://github.com/advisories/GHSA-79h2-q768-fpxr
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: Segfault on strings tensors with mistmatched dimensions, due to Go code
+    cve_id: CVE-2021-37692
+    cve_url: https://github.com/advisories/GHSA-cmgw-8vpc-rc59
+    detected_date: Aug 26
+    severity: moderate
+    first_patched: 2.5.1
+  - name: FPE in LSH in TFLite
+    cve_id: CVE-2021-37691
+    cve_url: https://github.com/advisories/GHSA-27qf-jwm8-g7f3
+    detected_date: Aug 26
+    severity: moderate
+    first_patched: 2.3.4
+  - name: Use after free and segfault in shape inference functions
+    cve_id: CVE-2021-37690
+    cve_url: https://github.com/advisories/GHSA-3hxh-8cp2-g4hg
+    detected_date: Aug 26
+    severity: moderate
+    first_patched: 2.3.4
+  - name: Infinite loop in TFLite
+    cve_id: CVE-2021-37686
+    cve_url: https://github.com/advisories/GHSA-mhhc-q96p-mfm9
+    detected_date: Aug 26
+    severity: moderate
+    first_patched: 2.3.4
+  - name: FPE in TFLite pooling operations
+    cve_id: CVE-2021-37684
+    cve_url: https://github.com/advisories/GHSA-q7f7-544h-67h9
+    detected_date: Aug 26
+    severity: moderate
+    first_patched: 2.3.4
+  - name: "`CHECK`-fail in `MapStage`"
+    cve_id: CVE-2021-37673
+    cve_url: https://github.com/advisories/GHSA-278g-rq84-9hmg
+    detected_date: Aug 26
+    severity: moderate
+    first_patched: 2.3.4
+  - name: Missing validation in shape inference for `Dequantize`
+    cve_id: CVE-2021-37677
+    cve_url: https://github.com/advisories/GHSA-qfpc-5pjr-mh26
+    detected_date: Aug 26
+    severity: moderate
+    first_patched: 2.3.4
+  - name: Division by 0 in most convolution operators
+    cve_id: CVE-2021-37675
+    cve_url: https://github.com/advisories/GHSA-9c8h-2mv3-49ww
+    detected_date: Aug 26
+    severity: moderate
+    first_patched: 2.3.4
+  - name: TensorFlow vulnerable to `CHECK` failure in tf.reshape via overflows
+    cve_id: CVE-2022-35934
+    cve_url: https://github.com/advisories/GHSA-f4w6-h4f5-wx45
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: Heap OOB in `SdcaOptimizerV2`
+    cve_id: CVE-2021-37672
+    cve_url: https://github.com/advisories/GHSA-5hj3-vjjf-f5m7
+    detected_date: Aug 26
+    severity: moderate
+    first_patched: 2.3.4
+  - name: Heap OOB in `UpperBound` and `LowerBound`
+    cve_id: CVE-2021-37670
+    cve_url: https://github.com/advisories/GHSA-9697-98pf-4rw7
+    detected_date: Aug 26
+    severity: moderate
+    first_patched: 2.3.4
+  - name: Crash in NMS ops caused by integer conversion to unsigned
+    cve_id: CVE-2021-37669
+    cve_url: https://github.com/advisories/GHSA-vmjw-c2vp-p33c
+    detected_date: Aug 26
+    severity: moderate
+    first_patched: 2.3.4
+  - name: FPE in `tf.raw_ops.UnravelIndex`
+    cve_id: CVE-2021-37668
+    cve_url: https://github.com/advisories/GHSA-2wmv-37vq-52g5
+    detected_date: Aug 26
+    severity: moderate
+    first_patched: 2.3.4
+  - name: Division by 0 in inplace operations
+    cve_id: CVE-2021-37660
+    cve_url: https://github.com/advisories/GHSA-cm5x-837x-jf3c
+    detected_date: Aug 26
+    severity: moderate
+    first_patched: 2.3.4
+  - name: Crash caused by integer conversion to unsigned
+    cve_id: CVE-2021-37661
+    cve_url: https://github.com/advisories/GHSA-gf88-j2mg-cc82
+    detected_date: Aug 26
+    severity: moderate
+    first_patched: 2.3.4
+  - name: Division by 0 in `ResourceGather`
+    cve_id: CVE-2021-37653
+    cve_url: https://github.com/advisories/GHSA-qjj8-32p7-h289
+    detected_date: Aug 26
+    severity: moderate
+    first_patched: 2.3.4
+  - name: Bad alloc in `StringNGrams` caused by integer conversion
+    cve_id: CVE-2021-37646
+    cve_url: https://github.com/advisories/GHSA-h6jh-7gv5-28vg
+    detected_date: Aug 26
+    severity: moderate
+    first_patched: 2.3.4
+  - name: Integer overflow due to conversion to unsigned
+    cve_id: CVE-2021-37645
+    cve_url: https://github.com/advisories/GHSA-9w2p-5mgw-p94c
+    detected_date: Aug 26
+    severity: moderate
+    first_patched: 2.4.3
+  - name: "`std::abort` raised from `TensorListReserve`"
+    cve_id: CVE-2021-37644
+    cve_url: https://github.com/advisories/GHSA-27j5-4p9v-pp67
+    detected_date: Aug 26
+    severity: moderate
+    first_patched: 2.3.4
+  - name: Division by 0 in `ResourceScatterDiv`
+    cve_id: CVE-2021-37642
+    cve_url: https://github.com/advisories/GHSA-ch4f-829c-v5pw
+    detected_date: Aug 26
+    severity: moderate
+    first_patched: 2.3.4
+  - name: Integer division by 0 in sparse reshaping
+    cve_id: CVE-2021-37640
+    cve_url: https://github.com/advisories/GHSA-95xm-g58g-3p88
+    detected_date: Aug 26
+    severity: moderate
+    first_patched: 2.3.4
+  - name: TensorFlow vulnerable to `CHECK` fail in `tf.sparse.cross`
+    cve_id: CVE-2022-35997
+    cve_url: https://github.com/advisories/GHSA-p7hr-f446-x6qf
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: Floating point exception in `SparseDenseCwiseDiv`
+    cve_id: CVE-2021-37636
+    cve_url: https://github.com/advisories/GHSA-hp4c-x6r7-6555
+    detected_date: Aug 26
+    severity: moderate
+    first_patched: 2.3.4
+  - name: TensorFlow vulnerable to `CHECK` fail in `Conv2DBackpropInput`
+    cve_id: CVE-2022-35999
+    cve_url: https://github.com/advisories/GHSA-37jf-mjv6-xfqw
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` fail in `LRNGrad`
+    cve_id: CVE-2022-35985
+    cve_url: https://github.com/advisories/GHSA-9942-r22v-78cp
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: " TensorFlow vulnerable to segfault in `RaggedBincount`"
+    cve_id: CVE-2022-35986
+    cve_url: https://github.com/advisories/GHSA-wr9v-g9vf-c74v
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` fail in `tf.linalg.matrix_rank`
+    cve_id: CVE-2022-35988
+    cve_url: https://github.com/advisories/GHSA-9vqj-64pv-w55c
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: " TensorFlow vulnerable to `CHECK` fail in `MaxPool`"
+    cve_id: CVE-2022-35989
+    cve_url: https://github.com/advisories/GHSA-j43h-pgmg-5hjq
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to segfault in `SparseBincount`
+    cve_id: CVE-2022-35982
+    cve_url: https://github.com/advisories/GHSA-397c-5g2j-qxpv
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` fail in `FractionalMaxPoolGrad`
+    cve_id: CVE-2022-35981
+    cve_url: https://github.com/advisories/GHSA-vxv8-r8q2-63xw
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to segfault in `QuantizedRelu` and `QuantizedRelu6`
+    cve_id: CVE-2022-35979
+    cve_url: https://github.com/advisories/GHSA-v7vw-577f-vp8x
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to segfault in `QuantizeDownAndShrinkRange`
+    cve_id: CVE-2022-35974
+    cve_url: https://github.com/advisories/GHSA-vgvh-2pf4-jr2x
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to segfault in `QuantizedMatMul`
+    cve_id: CVE-2022-35973
+    cve_url: https://github.com/advisories/GHSA-689c-r7h2-fv9v
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: " TensorFlow vulnerable to `CHECK` fail in `FakeQuantWithMinMaxVars`"
+    cve_id: CVE-2022-35971
+    cve_url: https://github.com/advisories/GHSA-9fpg-838v-wpv7
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to segfault in `QuantizedInstanceNorm`
+    cve_id: CVE-2022-35970
+    cve_url: https://github.com/advisories/GHSA-g35r-369w-3fqp
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` fail in `Conv2DBackpropInput`
+    cve_id: CVE-2022-35969
+    cve_url: https://github.com/advisories/GHSA-q2c3-jpmc-gfjx
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` fail in `AvgPoolGrad`
+    cve_id: CVE-2022-35968
+    cve_url: https://github.com/advisories/GHSA-2475-53vw-vp25
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to segfault in `QuantizedAdd`
+    cve_id: CVE-2022-35967
+    cve_url: https://github.com/advisories/GHSA-v6h3-348g-6h5x
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: Abort caused by allocating a vector that is too large in Tensorflow
+    cve_id: CVE-2022-23580
+    cve_url: https://github.com/advisories/GHSA-627q-g293-49q7
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: TensorFlow vulnerable to segfault in `QuantizedAvgPool`
+    cve_id: CVE-2022-35966
+    cve_url: https://github.com/advisories/GHSA-4w68-4x85-mjj9
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to segfault in `LowerBound` and `UpperBound`
+    cve_id: CVE-2022-35965
+    cve_url: https://github.com/advisories/GHSA-qxpx-j395-pw36
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` fail in `TensorListFromTensor`
+    cve_id: CVE-2022-35992
+    cve_url: https://github.com/advisories/GHSA-9v8w-xmr4-wgxp
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` fail in `TensorListScatter` and `TensorListScatterV2`
+    cve_id: CVE-2022-35991
+    cve_url: https://github.com/advisories/GHSA-vm7x-4qhj-rrcq
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` fail in `SetSize`
+    cve_id: CVE-2022-35993
+    cve_url: https://github.com/advisories/GHSA-wq6q-6m32-9rv9
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to segfault in `BlockLSTMGradV2`
+    cve_id: CVE-2022-35964
+    cve_url: https://github.com/advisories/GHSA-f7r5-q7cx-h668
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` failures in `UnbatchGradOp`
+    cve_id: CVE-2022-35952
+    cve_url: https://github.com/advisories/GHSA-h5vq-gw2c-pq47
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` failures in `FractionalAvgPoolGrad`
+    cve_id: CVE-2022-35963
+    cve_url: https://github.com/advisories/GHSA-84jm-4cf3-9jfm
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` failure in `TensorListReserve` via missing
+      validation
+    cve_id: CVE-2022-35960
+    cve_url: https://github.com/advisories/GHSA-v5xg-3q2c-c2r4
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to Int overflow in `RaggedRangeOp`
+    cve_id: CVE-2022-35940
+    cve_url: https://github.com/advisories/GHSA-x989-q2pq-4q5x
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` fail in `CollectiveGather`
+    cve_id: CVE-2022-35994
+    cve_url: https://github.com/advisories/GHSA-fhfc-2q7x-929f
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to floating point exception in `Conv2D`
+    cve_id: CVE-2022-35996
+    cve_url: https://github.com/advisories/GHSA-q5jv-m6qw-5g37
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` failures in `AvgPool3DGrad`
+    cve_id: CVE-2022-35959
+    cve_url: https://github.com/advisories/GHSA-wxjj-cgcx-r3vq
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` fail in `EmptyTensorList`
+    cve_id: CVE-2022-35998
+    cve_url: https://github.com/advisories/GHSA-qhw4-wwr7-gjc5
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to null dereference on MLIR on empty function attributes
+    cve_id: CVE-2022-36000
+    cve_url: https://github.com/advisories/GHSA-fqxc-pvf8-2w9v
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` fail in `DrawBoundingBoxes`
+    cve_id: CVE-2022-36001
+    cve_url: https://github.com/advisories/GHSA-jqm7-m5q7-3hm5
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to segfault in `Requantize`
+    cve_id: CVE-2022-36017
+    cve_url: https://github.com/advisories/GHSA-wqmc-pm8c-2jhc
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` fail in `Save` and `SaveSlices`
+    cve_id: CVE-2022-35983
+    cve_url: https://github.com/advisories/GHSA-m6vp-8q9j-whx4
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to segfault in `QuantizedBiasAdd`
+    cve_id: CVE-2022-35972
+    cve_url: https://github.com/advisories/GHSA-4pc4-m9mj-v2r9
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow vulnerable to `CHECK` fail in `Unbatch`
+    cve_id: CVE-2022-36002
+    cve_url: https://github.com/advisories/GHSA-mh3m-62v7-68xg
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: TensorFlow Denial of Service vulnerability
+    cve_id: CVE-2023-25661
+    cve_url: https://github.com/advisories/GHSA-fxgc-95xx-grvq
+    detected_date: Mar 28
+    severity: moderate
+    first_patched: 2.11.1
+  - name: Incomplete validation in `MaxPoolGrad`
+    cve_id: CVE-2021-37674
+    cve_url: https://github.com/advisories/GHSA-7ghq-fvr3-pj2x
+    detected_date: Aug 26
+    severity: moderate
+    first_patched: 2.3.4
+  - name: "`CHECK`-failures during Grappler's `IsSimplifiableReshape` in Tensorflow"
+    cve_id: CVE-2022-23581
+    cve_url: https://github.com/advisories/GHSA-fq86-3f29-px2c
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.5.3
+  - name: TensorFlow vulnerable to assertion fail on MLIR empty edge names
+    cve_id: CVE-2022-36012
+    cve_url: https://github.com/advisories/GHSA-jvhc-5hhr-w3v5
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: Null pointer dereference in TFLite's `Reshape` operator
+    cve_id: CVE-2021-29592
+    cve_url: https://github.com/advisories/GHSA-jjr8-m8g8-p6wv
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 2.1.4
+  - name: Integer overflow in TFLite concatentation
+    cve_id: CVE-2021-29601
+    cve_url: https://github.com/advisories/GHSA-9c84-4hx6-xmm4
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 2.1.4
+  - name: Heap OOB and null pointer dereference in `RaggedTensorToTensor`
+    cve_id: CVE-2021-29608
+    cve_url: https://github.com/advisories/GHSA-rgvq-pcvf-hx75
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 2.1.4
+  - name: Incomplete validation in `SparseAdd`
+    cve_id: CVE-2021-29609
+    cve_url: https://github.com/advisories/GHSA-cjc7-49v2-jp64
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 2.1.4
+  - name: Incomplete validation in `tf.raw_ops.CTCLoss`
+    cve_id: CVE-2021-29613
+    cve_url: https://github.com/advisories/GHSA-vvg4-vgrv-xfr7
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 2.1.4
+  - name: Heap OOB in TFLite
+    cve_id: CVE-2021-37685
+    cve_url: https://github.com/advisories/GHSA-c545-c4f9-rf6v
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.3.4
+  - name: TensorFlow vulnerable to `CHECK` failure in `SobolSample` via missing validation
+    cve_id: CVE-2022-35935
+    cve_url: https://github.com/advisories/GHSA-97p7-w86h-vcf9
+    detected_date: Sep 17
+    severity: moderate
+    first_patched: 2.7.2
+  - name: Heap OOB in TFLite's `Gather*` implementations
+    cve_id: CVE-2021-37687
+    cve_url: https://github.com/advisories/GHSA-jwf9-w5xm-f437
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.3.4
+  - name: Division by zero in TFLite
+    cve_id: CVE-2021-37680
+    cve_url: https://github.com/advisories/GHSA-cfpj-3q4c-jhvr
+    detected_date: Feb 10
+    severity: moderate
+    first_patched: 2.3.4
+  - name: Segmentation fault in tensorflow-lite
+    cve_id: CVE-2020-15210
+    cve_url: https://github.com/advisories/GHSA-x9j7-x98r-r4w2
+    detected_date: Aug 22
+    severity: moderate
+    first_patched: 2.1.2
+  - name: Undefined behavior and `CHECK`-fail in `FractionalMaxPoolGrad`
+    cve_id: CVE-2021-29580
+    cve_url: https://github.com/advisories/GHSA-x8h6-xgqx-jqgp
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Segfault in `CTCBeamSearchDecoder`
+    cve_id: CVE-2021-29581
+    cve_url: https://github.com/advisories/GHSA-vq2r-5xvm-3hc3
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap OOB read in `tf.raw_ops.Dequantize`
+    cve_id: CVE-2021-29582
+    cve_url: https://github.com/advisories/GHSA-c45w-2wxr-pp53
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap buffer overflow and undefined behavior in `FusedBatchNorm`
+    cve_id: CVE-2021-29583
+    cve_url: https://github.com/advisories/GHSA-9xh4-23q4-v6wr
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by zero in padding computation in TFLite
+    cve_id: CVE-2021-29585
+    cve_url: https://github.com/advisories/GHSA-mv78-g7wq-mhp4
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by zero in optimized pooling implementations in TFLite
+    cve_id: CVE-2021-29586
+    cve_url: https://github.com/advisories/GHSA-26j7-6w8w-7922
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by zero in TFLite's implementation of `SpaceToDepth`
+    cve_id: CVE-2021-29587
+    cve_url: https://github.com/advisories/GHSA-j7rm-8ww4-xx2g
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by zero in TFLite's implementation of `TransposeConv`
+    cve_id: CVE-2021-29588
+    cve_url: https://github.com/advisories/GHSA-vfr4-x8j2-3rf9
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by zero in TFLite's implementation of `GatherNd`
+    cve_id: CVE-2021-29589
+    cve_url: https://github.com/advisories/GHSA-3w67-q784-6w7c
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap OOB read in TFLite's implementation of `Minimum` or `Maximum`
+    cve_id: CVE-2021-29590
+    cve_url: https://github.com/advisories/GHSA-24x6-8c7m-hv3f
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap buffer overflow in `MaxPoolGrad`
+    cve_id: CVE-2021-29579
+    cve_url: https://github.com/advisories/GHSA-79fv-9865-4qcv
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by 0 in `QuantizedConv2D`
+    cve_id: CVE-2021-29527
+    cve_url: https://github.com/advisories/GHSA-x4g7-fvjj-prg8
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by zero in TFLite's implementation of `EmbeddingLookup`
+    cve_id: CVE-2021-29596
+    cve_url: https://github.com/advisories/GHSA-4vrf-ff7v-hpgr
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by zero in TFLite's implementation of `SpaceToBatchNd`
+    cve_id: CVE-2021-29597
+    cve_url: https://github.com/advisories/GHSA-v52p-hfjf-wg88
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by zero in TFLite's implementation of `SVDF`
+    cve_id: CVE-2021-29598
+    cve_url: https://github.com/advisories/GHSA-pmpr-55fj-r229
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by zero in TFLite's implementation of Split
+    cve_id: CVE-2021-29599
+    cve_url: https://github.com/advisories/GHSA-97wf-p777-86jq
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by zero in TFLite's implementation of `OneHot`
+    cve_id: CVE-2021-29600
+    cve_url: https://github.com/advisories/GHSA-j8qh-3xrq-c825
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by 0 in `Conv2D`
+    cve_id: CVE-2021-29526
+    cve_url: https://github.com/advisories/GHSA-4vf2-4xcg-65cx
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by zero in TFLite's implementation of `DepthwiseConv`
+    cve_id: CVE-2021-29602
+    cve_url: https://github.com/advisories/GHSA-rf3h-xgv5-2q39
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap OOB write in TFLite
+    cve_id: CVE-2021-29603
+    cve_url: https://github.com/advisories/GHSA-crch-j389-5f84
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by zero in TFLite's implementation of hashtable lookup
+    cve_id: CVE-2021-29604
+    cve_url: https://github.com/advisories/GHSA-8rm6-75mf-7r7r
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap buffer overflow in `FractionalAvgPoolGrad`
+    cve_id: CVE-2021-29578
+    cve_url: https://github.com/advisories/GHSA-6f89-8j54-29xf
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap buffer overflow in `AvgPool3DGrad`
+    cve_id: CVE-2021-29577
+    cve_url: https://github.com/advisories/GHSA-v6r6-84gr-92rm
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by zero in TFLite's implementation of `BatchToSpaceNd`
+    cve_id: CVE-2021-29593
+    cve_url: https://github.com/advisories/GHSA-cfx7-2xpc-8w4h
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by zero in TFLite's implementation of `DepthToSpace`
+    cve_id: CVE-2021-29595
+    cve_url: https://github.com/advisories/GHSA-vf94-36g5-69v8
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by 0 in `Conv2DBackpropInput`
+    cve_id: CVE-2021-29525
+    cve_url: https://github.com/advisories/GHSA-xm2v-8rrw-w9pm
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by 0 in `Conv2DBackpropFilter`
+    cve_id: CVE-2021-29524
+    cve_url: https://github.com/advisories/GHSA-r4pj-74mg-8868
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Invalid validation in `QuantizeAndDequantizeV2`
+    cve_id: CVE-2021-29610
+    cve_url: https://github.com/advisories/GHSA-mq5c-prh3-3f3h
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap buffer overflow in `BandedTriangularSolve`
+    cve_id: CVE-2021-29612
+    cve_url: https://github.com/advisories/GHSA-2xgj-xhgf-ggjv
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: CHECK-fail in AddManySparseToTensorsMap
+    cve_id: CVE-2021-29523
+    cve_url: https://github.com/advisories/GHSA-2cpx-427x-q2c6
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap buffer overflow in `MaxPool3DGradGrad`
+    cve_id: CVE-2021-29576
+    cve_url: https://github.com/advisories/GHSA-7cqx-92hp-x6wh
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Crash in `tf.strings.substr` due to `CHECK`-fail
+    cve_id: CVE-2021-29617
+    cve_url: https://github.com/advisories/GHSA-mmq6-q8r3-48fm
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Crash in `tf.transpose` with complex inputs
+    cve_id: CVE-2021-29618
+    cve_url: https://github.com/advisories/GHSA-xqfj-cr6q-pc8w
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Segfault in `tf.raw_ops.SparseCountSparseOutput`
+    cve_id: CVE-2021-29619
+    cve_url: https://github.com/advisories/GHSA-wvjw-p9f5-vq28
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap OOB in `QuantizeAndDequantizeV3`
+    cve_id: CVE-2021-29553
+    cve_url: https://github.com/advisories/GHSA-h9px-9vqg-222h
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: CHECK-failure in `UnsortedSegmentJoin`
+    cve_id: CVE-2021-29552
+    cve_url: https://github.com/advisories/GHSA-jhq9-wm9m-cf89
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Overflow/denial of service in `tf.raw_ops.ReverseSequence`
+    cve_id: CVE-2021-29575
+    cve_url: https://github.com/advisories/GHSA-6qgm-fv6v-rfpv
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap out of bounds access in MakeEdge in TensorFlow
+    cve_id: CVE-2020-26271
+    cve_url: https://github.com/advisories/GHSA-q263-fvxm-m5mw
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.3
+  - name: CHECK-fail in LSTM with zero-length input in TensorFlow
+    cve_id: CVE-2020-26270
+    cve_url: https://github.com/advisories/GHSA-m648-33qf-v3gp
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.3
+  - name: Write to immutable memory region in TensorFlow
+    cve_id: CVE-2020-26268
+    cve_url: https://github.com/advisories/GHSA-hhvc-g5hv-48c6
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.3
+  - name: Lack of validation in data format attributes in TensorFlow
+    cve_id: CVE-2020-26267
+    cve_url: https://github.com/advisories/GHSA-c9f3-9wfr-wgh7
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.3
+  - name: Uninitialized memory access in TensorFlow
+    cve_id: CVE-2020-26266
+    cve_url: https://github.com/advisories/GHSA-qhxx-j73r-qpm2
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.3
+  - name: OOB read in `MatrixTriangularSolve`
+    cve_id: CVE-2021-29551
+    cve_url: https://github.com/advisories/GHSA-vqw6-72r7-fgw7
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Float cast overflow undefined behavior
+    cve_id: CVE-2020-15266
+    cve_url: https://github.com/advisories/GHSA-xwhf-g6j5-j5gc
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.4.0
+  - name: Segfault in `tf.quantization.quantize_and_dequantize`
+    cve_id: CVE-2020-15265
+    cve_url: https://github.com/advisories/GHSA-rrfp-j2mp-hq9c
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.4.0
+  - name: Undefined behavior in `MaxPool3DGradGrad`
+    cve_id: CVE-2021-29574
+    cve_url: https://github.com/advisories/GHSA-828x-qc2p-wprq
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by 0 in `MaxPoolGradWithArgmax`
+    cve_id: CVE-2021-29573
+    cve_url: https://github.com/advisories/GHSA-9vpm-rcf4-9wqw
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by 0 in `FractionalAvgPool`
+    cve_id: CVE-2021-29550
+    cve_url: https://github.com/advisories/GHSA-f78g-q7r4-9wcv
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by 0 in `QuantizedAdd`
+    cve_id: CVE-2021-29549
+    cve_url: https://github.com/advisories/GHSA-x83m-p7pv-ch8v
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by 0 in `QuantizedBatchNormWithGlobalNormalization`
+    cve_id: CVE-2021-29548
+    cve_url: https://github.com/advisories/GHSA-p45v-v4pw-77jr
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Reference binding to nullptr in `SdcaOptimizer`
+    cve_id: CVE-2021-29572
+    cve_url: https://github.com/advisories/GHSA-5gqf-456p-4836
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap out of bounds read in `MaxPoolGradWithArgmax`
+    cve_id: CVE-2021-29570
+    cve_url: https://github.com/advisories/GHSA-545v-42p7-98fq
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Type confusion during tensor casts lead to dereferencing null pointers
+    cve_id: CVE-2021-29513
+    cve_url: https://github.com/advisories/GHSA-452g-f7fp-9jf7
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap out of bounds read in `RequantizationRange`
+    cve_id: CVE-2021-29569
+    cve_url: https://github.com/advisories/GHSA-3h8m-483j-7xxm
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Reference binding to null in `ParameterizedTruncatedNormal`
+    cve_id: CVE-2021-29568
+    cve_url: https://github.com/advisories/GHSA-4p4p-www8-8fv9
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Lack of validation in `SparseDenseCwiseMul`
+    cve_id: CVE-2021-29567
+    cve_url: https://github.com/advisories/GHSA-wp3c-xw9g-gpcg
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap OOB access in `Dilation2DBackpropInput`
+    cve_id: CVE-2021-29566
+    cve_url: https://github.com/advisories/GHSA-pvrc-hg3f-58r6
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap out of bounds in `QuantizedBatchNormWithGlobalNormalization`
+    cve_id: CVE-2021-29547
+    cve_url: https://github.com/advisories/GHSA-4fg4-p75j-w5xj
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by 0 in `QuantizedBiasAdd`
+    cve_id: CVE-2021-29546
+    cve_url: https://github.com/advisories/GHSA-m34j-p8rj-wjxq
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap buffer overflow in `SparseTensorToCSRSparseMatrix`
+    cve_id: CVE-2021-29545
+    cve_url: https://github.com/advisories/GHSA-hmg3-c7xj-6qwm
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Null pointer dereference in `SparseFillEmptyRows`
+    cve_id: CVE-2021-29565
+    cve_url: https://github.com/advisories/GHSA-r6pg-pjwc-j585
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Null pointer dereference in `EditDistance`
+    cve_id: CVE-2021-29564
+    cve_url: https://github.com/advisories/GHSA-75f6-78jr-4656
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by 0 in `Conv3DBackprop*`
+    cve_id: CVE-2021-29522
+    cve_url: https://github.com/advisories/GHSA-c968-pq7h-7fxv
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: TensorFlow vulnerable to integer overflow in math ops
+    cve_id: CVE-2022-36015
+    cve_url: https://github.com/advisories/GHSA-rh87-q4vg-m45j
+    detected_date: Sep 17
+    severity: low
+    first_patched: 2.7.2
+  - name: CHECK-fail in `tf.raw_ops.RFFT`
+    cve_id: CVE-2021-29563
+    cve_url: https://github.com/advisories/GHSA-ph87-fvjr-v33w
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: TensorFlow vulnerable to `CHECK`-fail in `tensorflow::full_type::SubstituteFromAttrs`
+    cve_id: CVE-2022-36016
+    cve_url: https://github.com/advisories/GHSA-g468-qj8g-vcjc
+    detected_date: Sep 17
+    severity: low
+    first_patched: 2.7.2
+  - name: Division by zero in TFLite's convolution code
+    cve_id: CVE-2021-29594
+    cve_url: https://github.com/advisories/GHSA-3qgw-p4fm-x7gf
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap buffer overflow in `Conv3DBackprop*`
+    cve_id: CVE-2021-29520
+    cve_url: https://github.com/advisories/GHSA-wcv5-qrj6-9pfm
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: CHECK-fail in `CTCGreedyDecoder`
+    cve_id: CVE-2021-29543
+    cve_url: https://github.com/advisories/GHSA-fphq-gw9m-ghrv
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: CHECK-fail in SparseCross due to type confusion
+    cve_id: CVE-2021-29519
+    cve_url: https://github.com/advisories/GHSA-772j-h9xw-ffp5
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: CHECK-fail in `tf.raw_ops.IRFFT`
+    cve_id: CVE-2021-29562
+    cve_url: https://github.com/advisories/GHSA-36vm-xw34-x4pj
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap buffer overflow in `StringNGrams`
+    cve_id: CVE-2021-29542
+    cve_url: https://github.com/advisories/GHSA-4hrh-9vmp-2jgg
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: CHECK-fail in `LoadAndRemapMatrix`
+    cve_id: CVE-2021-29561
+    cve_url: https://github.com/advisories/GHSA-gvm4-h8j3-rjrq
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: "`CHECK` failure in `SobolSample` via missing validation"
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-cqvq-fvhr-v6hc
+    detected_date: Nov 22
+    severity: low
+    first_patched: 2.8.4
+  - name: "`CHECK` fail in `TensorListScatter` and `TensorListScatterV2` in eager
+      mode"
+    cve_id: 
+    cve_url: https://github.com/advisories/GHSA-xf83-q765-xm6m
+    detected_date: Nov 22
+    severity: low
+    first_patched: 2.8.4
+  - name: Session operations in eager mode lead to null pointer dereferences
+    cve_id: CVE-2021-29518
+    cve_url: https://github.com/advisories/GHSA-62gx-355r-9fhg
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Stack overflow in `ParseAttrValue` with nested tensors
+    cve_id: CVE-2021-29615
+    cve_url: https://github.com/advisories/GHSA-qw5h-7f53-xrp6
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap buffer overflow in `RaggedTensorToTensor`
+    cve_id: CVE-2021-29560
+    cve_url: https://github.com/advisories/GHSA-8gv3-57p6-g35r
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Null pointer dereference in `StringNGrams`
+    cve_id: CVE-2021-29541
+    cve_url: https://github.com/advisories/GHSA-xqfj-35wv-m3cr
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by zero in `Conv3D`
+    cve_id: CVE-2021-29517
+    cve_url: https://github.com/advisories/GHSA-772p-x54p-hjrv
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Null pointer dereference via invalid Ragged Tensors
+    cve_id: CVE-2021-29516
+    cve_url: https://github.com/advisories/GHSA-84mw-34w6-2q43
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Reference binding to null pointer in `MatrixDiag*` ops
+    cve_id: CVE-2021-29515
+    cve_url: https://github.com/advisories/GHSA-hc6c-75p4-hmq4
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap OOB access in unicode ops
+    cve_id: CVE-2021-29559
+    cve_url: https://github.com/advisories/GHSA-59q2-x2qc-4c97
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap buffer overflow in `SparseSplit`
+    cve_id: CVE-2021-29558
+    cve_url: https://github.com/advisories/GHSA-mqh2-9wrp-vx84
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap buffer overflow in `Conv2DBackpropFilter`
+    cve_id: CVE-2021-29540
+    cve_url: https://github.com/advisories/GHSA-xgc3-m89p-vr3x
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Segfault in tf.raw_ops.ImmutableConst
+    cve_id: CVE-2021-29539
+    cve_url: https://github.com/advisories/GHSA-g4h2-gqm3-c9wq
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by 0 in `SparseMatMul`
+    cve_id: CVE-2021-29557
+    cve_url: https://github.com/advisories/GHSA-xw93-v57j-fcgh
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by zero in `Conv2DBackpropFilter`
+    cve_id: CVE-2021-29538
+    cve_url: https://github.com/advisories/GHSA-j8qc-5fqr-52fp
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: CHECK-fail due to integer overflow
+    cve_id: CVE-2021-29584
+    cve_url: https://github.com/advisories/GHSA-xvjm-fvxx-q3hv
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap buffer overflow in `QuantizedResizeBilinear`
+    cve_id: CVE-2021-29537
+    cve_url: https://github.com/advisories/GHSA-8c89-2vwr-chcq
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap buffer overflow in `QuantizedReshape`
+    cve_id: CVE-2021-29536
+    cve_url: https://github.com/advisories/GHSA-2gfx-95x2-5v3x
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap buffer overflow in `QuantizedMul`
+    cve_id: CVE-2021-29535
+    cve_url: https://github.com/advisories/GHSA-m3f9-w3p3-p669
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by 0 in `FusedBatchNorm`
+    cve_id: CVE-2021-29555
+    cve_url: https://github.com/advisories/GHSA-r35g-4525-29fq
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: CHECK-fail in SparseConcat
+    cve_id: CVE-2021-29534
+    cve_url: https://github.com/advisories/GHSA-6j9c-grc6-5m6g
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: CHECK-fail in DrawBoundingBoxes
+    cve_id: CVE-2021-29533
+    cve_url: https://github.com/advisories/GHSA-393f-2jr3-cp69
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by 0 in `Reverse`
+    cve_id: CVE-2021-29556
+    cve_url: https://github.com/advisories/GHSA-fxqh-cfjm-fp93
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap out of bounds read in `RaggedCross`
+    cve_id: CVE-2021-29532
+    cve_url: https://github.com/advisories/GHSA-j47f-4232-hvv8
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: CHECK-fail in tf.raw_ops.EncodePng
+    cve_id: CVE-2021-29531
+    cve_url: https://github.com/advisories/GHSA-3qxp-qjq7-w4hf
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Invalid validation in `SparseMatrixSparseCholesky`
+    cve_id: CVE-2021-29530
+    cve_url: https://github.com/advisories/GHSA-xcwj-wfcm-m23c
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Heap buffer overflow caused by rounding
+    cve_id: CVE-2021-29529
+    cve_url: https://github.com/advisories/GHSA-jfp7-4j67-8r3q
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Null dereference in Grappler's `TrySimplify`
+    cve_id: CVE-2021-29616
+    cve_url: https://github.com/advisories/GHSA-4hvv-7x94-7vq8
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+  - name: Division by 0 in `QuantizedMul`
+    cve_id: CVE-2021-29528
+    cve_url: https://github.com/advisories/GHSA-6f84-42vf-ppwp
+    detected_date: Aug 22
+    severity: low
+    first_patched: 2.1.4
+- name: tox
+  description: Tox is a generic virtualenv management and test command line tool
+  package_url: https://pypi.org/tox
+  version: '3.0'
+  license: MIT
+  open_source: true
+  hosted_saas: false
+  category: Libraries
+  sub_category: PyPI Packages
+  image_url: https://img.stackshare.io/package/19991/default_f2178576c59f6927768590a32b6ef092891768c5.png
+  detection_source_url: python/spec/fixtures/pyproject_files/pyproject.toml
+  detection_source: python/spec/fixtures/pyproject_files/pyproject.toml
